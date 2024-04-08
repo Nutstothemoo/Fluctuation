@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import SectionContainer from '@/components/SectionContainer'
 import Footer from '@/components/Footer'
 import siteMetadata from '@/data/siteMetadata'
-import { ThemeProviders } from './theme-providers'
+import { ThemeProviders } from '../theme-providers'
 import { Metadata } from 'next'
 
 const space_grotesk = Space_Grotesk({
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     url: './',
     siteName: siteMetadata.title,
     images: [siteMetadata.socialBanner],
-    locale: 'en_US',
+    locale: 'en',
     type: 'website',
   },
   alternates: {
@@ -57,10 +57,16 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode
+  params: { locale: string }
+}) {
   return (
     <html
-      lang={siteMetadata.language}
+      lang={params.locale}
       className={`${space_grotesk.variable} scroll-smooth`}
       suppressHydrationWarning
     >
@@ -79,9 +85,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <SectionContainer>
             <div className="flex h-screen flex-col justify-between font-sans">
               <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
-              <div className="fixed top-0 left-0 right-0 z-50 mx-auto px-4 md:px-8 lg:px-16">
+                <div className="fixed left-0 right-0 top-0 z-50 mx-auto px-4 md:px-8 lg:px-16">
                   <Header />
-                </div>       
+                </div>
                 <main className="mb-auto">{children}</main>
               </SearchProvider>
               <Footer />
