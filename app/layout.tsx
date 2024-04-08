@@ -79,7 +79,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <SectionContainer>
             <div className="flex h-screen flex-col justify-between font-sans">
               <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
-                <Header />
+              <div className="fixed top-0 left-0 right-0 z-50 mx-auto px-4 md:px-8 lg:px-16">
+                  <Header />
+                </div>       
                 <main className="mb-auto">{children}</main>
               </SearchProvider>
               <Footer />

@@ -1,3 +1,4 @@
+"use client"
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
 import Logo from '@/data/logo.svg'
@@ -5,10 +6,13 @@ import Link from './Link'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import SearchButton from './SearchButton'
+import { useState, useEffect } from 'react';
 
 const Header = () => {
+
+
   return (
-    <header className="flex items-center justify-between py-10">
+    <header className={` flex items-center justify-between py-10 transition-all duration-500 ease-in-out sticky top-0 z-50`}>
       <div>
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">

@@ -54,12 +54,28 @@ const securityHeaders = [
   },
 ]
 
+const i18nConfig = {
+  i18n: {
+    locales: ['de', 'en', 'fr', 'nl'],
+    // defaultLocale: 'en-US',
+    defaultLocale: 'en',
+    localeDetection: false,    
+  },
+  trailingSlash: true,
+  localePath:
+  typeof window === 'undefined'
+    ? require('path').resolve('./public/locales')
+    : '/locales',
+  reloadOnPrerender: process.env.NODE_ENV === 'development',
+  debug: process.env.NODE_ENV === 'development',
+}
 /**
  * @type {import('next/dist/next-server/server/config').NextConfig}
  **/
 module.exports = () => {
   const plugins = [withContentlayer, withBundleAnalyzer]
   return plugins.reduce((acc, next) => next(acc), {
+    ...i18nConfig,
     reactStrictMode: true,
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
     eslint: {
