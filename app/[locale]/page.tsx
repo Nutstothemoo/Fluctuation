@@ -5,7 +5,7 @@ import Main from './Main'
 import SplashScreen from '@/components/splashscreen'
 // import initTranslations from './i18n'
 
-export default async function Page({ params: { locale } }) {
+export default async function Page() {
   // const { t } = await initTranslations(locale, ['home'])
   const sortedPosts = sortPosts(allBlogs)
   const posts = allCoreContent(sortedPosts)

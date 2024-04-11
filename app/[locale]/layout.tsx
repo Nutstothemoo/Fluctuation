@@ -10,7 +10,8 @@ import Footer from '@/components/Footer'
 import siteMetadata from '@/data/siteMetadata'
 import { ThemeProviders } from '../theme-providers'
 import { Metadata } from 'next'
-import 'node_modules/flag-icons/css/flag-icons.min.css'
+// import 'node_modules/flag-icons/css/flag-icons.min.css'
+
 const space_grotesk = Space_Grotesk({
   subsets: ['latin'],
   display: 'swap',
@@ -57,16 +58,10 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode
-  params: { locale: string }
-}) {
+export default function RootLayout({ children, params: { locale } }) {
   return (
     <html
-      lang={params.locale}
+      lang={locale}
       className={`${space_grotesk.variable} scroll-smooth`}
       suppressHydrationWarning
     >
@@ -86,7 +81,7 @@ export default function RootLayout({
             <div className="flex h-screen flex-col justify-between font-sans">
               <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
                 <div className="fixed left-0 right-0 top-0 z-50 mx-auto px-4 md:px-8 lg:px-16">
-                  <Header />
+                  <Header locale={locale} />
                 </div>
                 <main className="mb-auto">{children}</main>
               </SearchProvider>
