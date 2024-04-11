@@ -7,6 +7,7 @@ import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import SearchButton from './SearchButton'
 import LanguageSelector from './LanguageSelector'
+import LocaleSwitcher from './locale-switcher'
 
 const Header = ({ locale }) => {
   return (
@@ -43,7 +44,8 @@ const Header = ({ locale }) => {
           ))}
 
         <SearchButton />
-        <LanguageSelector locale={locale} />
+        <LocaleSwitcher />
+        {/* <LanguageSelector locale={locale} /> */}
         <ThemeSwitch />
         <MobileNav />
       </div>

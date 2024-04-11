@@ -1,28 +1,33 @@
-import React from 'react'
+'use client'
+import { useRouter, usePathname, useSearchParams } from 'next/navigation'
 import CountryFlag from 'react-country-flag'
-import Link from 'next/link'
 
 export default function LanguageSelector({ locale }) {
+  const router = useRouter()
+  const pathname = usePathname()
+
+  const changeLanguage = (newLocale) => {
+    document.cookie = `NEXT_LOCALE=${newLocale}; path=/`
+  }
+
   return (
     <div>
       {locale == 'fr' ? (
-        <Link href="/" locale="en">
-          <CountryFlag
-            className="rounded-full"
-            style={{ width: '25px', height: '25px' }}
-            countryCode={'GB'}
-            svg
-          />
-        </Link>
+        <CountryFlag
+          onClick={() => changeLanguage('en')}
+          className="rounded-full"
+          style={{ width: '25px', height: '25px' }}
+          countryCode={'GB'}
+          svg
+        />
       ) : (
-        <Link href="/" locale="fr">
-          <CountryFlag
-            className="rounded-full "
-            style={{ width: '25px', height: '25px' }}
-            countryCode={'FR'}
-            svg
-          />
-        </Link>
+        <CountryFlag
+          onClick={() => changeLanguage('fr')}
+          className="rounded-full"
+          style={{ width: '25px', height: '25px' }}
+          countryCode={'FR'}
+          svg
+        />
       )}
     </div>
   )
