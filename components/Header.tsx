@@ -44,7 +44,7 @@ const Header = ({ locale }) => {
           ))}
 
         <SearchButton />
-        <LocaleSwitcher />
+        <LocaleSwitcher locale={locale} />
         {/* <LanguageSelector locale={locale} /> */}
         <ThemeSwitch />
         <MobileNav />

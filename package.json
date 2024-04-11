@@ -13,10 +13,13 @@
   },
   "dependencies": {
     "@next/bundle-analyzer": "14.1.4",
+    "@radix-ui/react-navigation-menu": "^1.1.4",
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.12",
     "accept-language": "^3.0.18",
     "autoprefixer": "^10.4.13",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
     "contentlayer2": "0.4.4",
     "esbuild": "0.20.2",
     "flag-icons": "^7.2.1",
@@ -25,6 +28,7 @@
     "i18next": "^23.10.1",
     "i18next-resources-to-backend": "^1.2.0",
     "image-size": "1.0.0",
+    "lucide-react": "^0.367.0",
     "next": "14.1.4",
     "next-contentlayer2": "0.4.4",
     "next-i18n-router": "^5.4.0",
@@ -47,7 +51,9 @@
     "remark": "^15.0.0",
     "remark-gfm": "^4.0.0",
     "remark-math": "^6.0.0",
+    "tailwind-merge": "^2.2.2",
     "tailwindcss": "^3.4.3",
+    "tailwindcss-animate": "^1.0.7",
     "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
