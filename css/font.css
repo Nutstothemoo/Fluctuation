@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'liquid-fluid';
+  src: url('/public/font/LIQUIDO-Fluid.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'liquid-reguar';
+    src: url('/public/font/LIQUIDO-Reguar.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}

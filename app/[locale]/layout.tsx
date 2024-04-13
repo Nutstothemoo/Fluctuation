@@ -1,6 +1,6 @@
 import 'css/tailwind.css'
 import 'pliny/search/algolia.css'
-
+import 'css/font.css'
 import { Space_Grotesk } from 'next/font/google'
 import { Analytics, AnalyticsConfig } from 'pliny/analytics'
 import { SearchProvider, SearchConfig } from 'pliny/search'
@@ -10,6 +10,7 @@ import Footer from '@/components/Footer'
 import siteMetadata from '@/data/siteMetadata'
 import { ThemeProviders } from '../theme-providers'
 import { Metadata } from 'next'
+import Image from 'next/image'
 
 const space_grotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -59,11 +60,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children, params: { locale } }) {
   return (
-    <html
-      lang={locale}
-      className={`${space_grotesk.variable} scroll-smooth`}
-      suppressHydrationWarning
-    >
+    <html lang={locale} className={`scroll-smooth`} suppressHydrationWarning>
       <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/apple-touch-icon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png" />
@@ -73,15 +70,26 @@ export default function RootLayout({ children, params: { locale } }) {
       <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
       <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-      <body className="bg-white pl-[calc(100vw-100%)] text-black antialiased dark:bg-gray-950 dark:text-white">
+      <body
+        className="bg-white pl-[calc(100vw-100%)] text-black antialiased dark:bg-indigo-950 dark:text-white"
+        style={{
+          backgroundImage: "url('/static/images/L03.jpg')",
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
         <ThemeProviders>
           <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
           <SectionContainer>
-            <div className="flex h-screen flex-col justify-between font-sans">
+            <div
+              className="flex h-screen flex-col justify-between font-sans "
+              style={{ fontFamily: 'liquid-fluid' }}
+            >
               <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
                 <div className="fixed left-0 right-0 top-0 z-50 mx-auto px-4 md:px-8 lg:px-16">
                   <Header locale={locale} />
                 </div>
+                <Image src="/public/assets/L01.jpg" alt="background" layout="fill" />
                 <main className="mb-auto">{children}</main>
               </SearchProvider>
               <Footer />

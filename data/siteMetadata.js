@@ -2,7 +2,7 @@
 const siteMetadata = {
   title: 'Fluctuation Festival',
   author: 'Maxime D',
-  headerTitle: 'Fluctuation',
+  headerTitle: 'Fluctuations',
   description: 'Website for the Fluctuation Festival',
   language: 'en',
   theme: 'system', // system, dark or light
