@@ -8,20 +8,13 @@ import ThirdPage from '@/components/ThirdPage'
 import FourthPage from '@/components/FourPage'
 import FivePage from '@/components/FivePage'
 import SixPage from '@/components/SixPage'
-import localFont from 'next/font/local'
-
-// Font files can be colocated inside of `app`
-const fluidFont = localFont({
-  src: '../liquido-fluid.otf',
-  display: 'swap',
-})
 
 export default async function Page( { params: { locale } } ) {
   // const sortedPosts = sortPosts(allBlogs)
   // const posts = allCoreContent(sortedPosts)
   return (
     <>
-      <SplashScreen fluidFont={fluidFont} />
+      <SplashScreen />
       <FirstPage params={{ locale }} />
       <SecondPage params={{ locale }} />
       <ThirdPage  params={{ locale }} />

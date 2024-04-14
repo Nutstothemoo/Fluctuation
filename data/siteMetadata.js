@@ -1,7 +1,7 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
   title: 'Fluctuation Festival',
-  author: 'Maxime D',
+  author: 'maximedupin.com',
   headerTitle: 'Fluctuations',
   description: 'Website for the Fluctuation Festival',
   language: 'en',

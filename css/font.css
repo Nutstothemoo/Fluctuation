@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'liquid-fluid';
-  src: url('/public/font/LIQUIDO-Fluid.otf') format('opentype');
+  font-family: 'liquid-fluid2';
+  src: url('/public/font/liquido-fluid.otf') format('opentype');
   font-weight: normal;
-  font-style: normal;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'liquid-reguar';
-    src: url('/public/font/LIQUIDO-Reguar.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'liquid-fluid3';
+  src: url('/public/font/liquido-fluid.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
 }
