@@ -11,18 +11,11 @@ import siteMetadata from '@/data/siteMetadata'
 import { ThemeProviders } from '../theme-providers'
 import { Metadata } from 'next'
 import localFont from 'next/font/local'
-import Background from '@/components/Background'
 
 // Font files can be colocated inside of `app`
 const fluidFont = localFont({
   src: '../liquido-fluid.otf',
   display: 'swap',
-})
-
-const space_grotesk = Space_Grotesk({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-space-grotesk',
 })
 
 export const metadata: Metadata = {
