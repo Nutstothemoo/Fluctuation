@@ -14,7 +14,7 @@ export default async function Page( { params: { locale } } ) {
   // const posts = allCoreContent(sortedPosts)
   return (
     <>
-      <SplashScreen />
+      {/* <SplashScreen /> */}
       <FirstPage params={{ locale }} />
       <SecondPage params={{ locale }} />
       <ThirdPage  params={{ locale }} />
