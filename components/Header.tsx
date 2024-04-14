@@ -7,7 +7,8 @@ import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 // import SearchButton from './SearchButton'
 import LocaleSwitcher from './locale-switcher'
-
+import Image from 'next/image'
+import soleilcouchant from '../public/assets/soleilcouchant.png'
 
 const Header = ({ locale , fluidFont}) => {
   // const [scrollPosition, setScrollPosition] = useState(0)
@@ -32,11 +33,16 @@ const Header = ({ locale , fluidFont}) => {
       <div >
         <Link href={`/${locale}/`} aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">
-            <div className="mr-3">
-              <Logo />
+            <div>
+                <Image
+                  src={soleilcouchant}
+                  alt="Picture of the author"
+                  width={70}
+                  height={70}
+                />
             </div>
             {typeof siteMetadata.headerTitle === 'string' ? (
-                <div className={`light: blue-indigo-950 dark: hidden sm:block h-6 text-3xl ${fluidFont.className}`}>{siteMetadata.headerTitle}
+                <div className={`text-indigo-950 dark:text-white dark: opacity-80 pb-10 pl-3 pt-1 pr-3 rounded-full dark: bg-indigo-950 hidden sm:block h-6 text-3xl ${fluidFont.className}`}>{siteMetadata.headerTitle}
                 </div>
             ) : (
               siteMetadata.headerTitle

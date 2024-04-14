@@ -81,8 +81,6 @@ export default function RootLayout({ children, params: { locale } }) {
       >
         <ThemeProviders>
           <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
-          <Background />
-          <SectionContainer>
             <div
               className="z-5 flex h-screen flex-col justify-between font-sans "
             >
@@ -94,7 +92,6 @@ export default function RootLayout({ children, params: { locale } }) {
               </SearchProvider>
               <Footer />
             </div>
-          </SectionContainer>
         </ThemeProviders>
       </body>
     </html>
