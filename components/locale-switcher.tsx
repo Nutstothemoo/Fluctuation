@@ -31,7 +31,7 @@ export default function LocaleSwitcher({ locale }) {
         <DropdownMenuTrigger>
           <CountryFlag
             onClick={toggleDropdown}
-            className="rounded-3xl "
+            className="light: rounded-3xl bg-white opacity-80 dark:bg-indigo-950 "
             style={{ width: '25px', height: '25px' }}
             countryCode={locale === 'en' ? 'GB' : locale}
             svg
