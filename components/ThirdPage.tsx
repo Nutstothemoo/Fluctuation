@@ -11,8 +11,8 @@ const ThirdPage = async ({ params }) => {
 
   return (
     <div className="relative top-0 flex h-screen min-h-screen w-full items-center justify-center">
-      <div className="flex flex-col justify-center gap-2 sm:flex-row">
-        <div className="m-4 flex w-full flex-col rounded-2xl border border-indigo-300 bg-indigo-200 p-4 shadow-lg dark:border-indigo-600 dark:bg-indigo-900 sm:m-8 sm:w-1/2">
+      <div className="flex flex-col justify-center gap-6 sm:flex-row">
+        <div className="m-8 flex flex-col rounded-2xl border border-indigo-300 bg-indigo-200 p-4 shadow-lg dark:border-indigo-600 dark:bg-indigo-900 sm:m-8 sm:w-1/2">
           <h3 className="mb-8 text-center text-lg font-bold md:text-4xl">
             {dictionary.titlethirdpage1}
           </h3>
@@ -25,11 +25,11 @@ const ThirdPage = async ({ params }) => {
             <li className="text-sm sm:text-base md:text-lg lg:text-xl">{dictionary.thirdcity}</li>
           </ul>
         </div>
-        <div className="m-4 flex w-full flex-col rounded-2xl border border-indigo-300 bg-indigo-200 p-4 shadow-lg dark:border-indigo-600 dark:bg-indigo-900 sm:m-8 sm:w-1/2">
+        <div className="m-8 flex flex-col rounded-2xl border border-indigo-300 bg-indigo-200 p-4 shadow-lg dark:border-indigo-600 dark:bg-indigo-900 sm:m-8 sm:w-1/2">
           <h3 className="mb-8 text-center text-lg font-bold md:text-4xl">
-            {dictionary.titlethirdpage2}
+            2025
           </h3>
-          <p className="text-justify md:text-lg lg:text-xl">{dictionary.line10}</p>
+          <p className="text-justify md:text-lg">{dictionary.line10}</p>
         </div>
       </div>
     </div>

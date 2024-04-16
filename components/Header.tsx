@@ -32,7 +32,7 @@ const Header = ({ locale, fluidFont }) => {
               </div>
               {typeof siteMetadata.headerTitle === 'string' ? (
                 <div
-                  className={`dark: dark: hidden h-6 text-3xl text-indigo-950 dark:text-white md:block ${fluidFont.className}`}
+                  className={`dark: dark: hidden h-6 text-3xl text-indigo-900 dark:text-white md:block ${fluidFont.className}`}
                 >
                   {siteMetadata.headerTitle}
                 </div>
@@ -49,7 +49,7 @@ const Header = ({ locale, fluidFont }) => {
               <Link
                 key={link.title}
                 href={link.href}
-                className="lg:text-md relative hidden w-fit text-gray-900 after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-black after:transition after:duration-300 after:content-[''] after:hover:scale-x-100 dark:text-gray-100 dark:after:bg-white sm:block sm:text-sm"
+                className="lg:text-md font-bold relative hidden w-fit text-gray-900 after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-black after:transition after:duration-300 after:content-[''] after:hover:scale-x-100 dark:text-gray-100 dark:after:bg-white sm:block sm:text-sm"
               >
                 {link.title}
               </Link>
