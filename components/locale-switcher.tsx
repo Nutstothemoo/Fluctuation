@@ -37,14 +37,15 @@ export default function LocaleSwitcher({ locale }) {
             svg
           />
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="rounded-2xl">
+        <DropdownMenuContent className="mt-1  rounded-2xl bg-white opacity-80 dark:bg-indigo-950">
           {i18n.locales
             .filter((local) => local !== locale)
             .map((local) => {
               return (
+                // eslint-disable-next-line react/jsx-key
                 <DropdownMenuItem
                   className={
-                    'flex h-full w-full select-none flex-col justify-end rounded-md p-2 no-underline outline-none focus:shadow-md'
+                    'flex h-full w-full select-none flex-col justify-end rounded-md p-1 no-underline outline-none focus:shadow-md'
                   }
                 >
                   <Link href={redirectedPathName(local)}>
