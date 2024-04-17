@@ -1,6 +1,6 @@
 import { getDictionary } from 'get-dictionary'
 import React from 'react'
-import Paragraph from './Paragraph';
+import Paragraph from './Paragraph'
 import eu from '../public/assets/eu.webp'
 import Br1 from '../public/assets/BR1.webp'
 import Br2 from '../public/assets/BR2.webp'
@@ -12,19 +12,18 @@ import Image from 'next/image'
 
 interface FirstPageProps {
   params: {
-    locale: string;
-  };
+    locale: string
+  }
 }
 
-const BoatResidency = async ({ params } ) => {
+const BoatResidency = async ({ params }) => {
   const dictionary = await getDictionary(params.locale)
 
   return (
-    <div className="relative top-0 flex h-screen w-full items-center justify-center">
-      <div className="md:text-md lg:text-xl sm:text-sm text-justify"> 
-      {/* {dictionary.line1} {dictionary.line2} {dictionary.line3} {dictionary.line4} */}
-      <Paragraph text={`${dictionary.line1} ${dictionary.line2} ${dictionary.line3} ${dictionary.line4}`} />
-      {/* <ParagraphWord text={`${dictionary.line1} ${dictionary.line2} ${dictionary.line3} ${dictionary.line4}`} /> */}
+    <div className="relative top-0 flex h-screen w-full flex-col items-center justify-center">
+      <div className="md:text-md text-justify sm:text-sm lg:text-xl">
+        <h3>{dictionary.boatline1}</h3>
+        {/* boatline 1-25 */}
       </div>
       <div>
         <Image src={eu} alt="EU" />
