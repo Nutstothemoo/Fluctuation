@@ -6,7 +6,7 @@ export default async function Page({ params: { locale } }) {
     <>
       <div className="mt-48">
         <SectionContainer>
-          <Partners params={{ locale }} />
+          <Partners />
         </SectionContainer>
       </div>
     </>
