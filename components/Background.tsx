@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import afficheBateausanstexte from '../public/assets/afficheBateausanstexte.jpg'
-
+import afficheBateusanstextwebp from '../public/assets/afficheBateausanstexte.webp'
 export default function Background() {
   return (
     <Image
       alt="Fluctuation background"
-      src={afficheBateausanstexte}
+      src={afficheBateusanstextwebp}
       placeholder="blur"
       quality={100}
       fill
