@@ -7,8 +7,9 @@ import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 // import SearchButton from './SearchButton'
 import LocaleSwitcher from './locale-switcher'
-import Image from 'next/image'
-import logofluctuation from '../public/assets/logofluctuation.png'
+// import Image from 'next/image'
+// import logofluctuation from '../public/assets/LOGO-FUEGO-LIGHT.webp'
+import LogoFueg from '@/components/LogoFueg'
 
 const Header = ({ locale, fluidFont }) => {
   return (
@@ -21,18 +22,11 @@ const Header = ({ locale, fluidFont }) => {
           <Link href={`/${locale}/`} aria-label={siteMetadata.headerTitle}>
             <div className="flex items-center justify-between">
               <div>
-                <Image
-                  src={logofluctuation}
-                  alt="Logo Fluctuation"
-                  // layout="fill"
-                  objectFit="contain"
-                  width={70}
-                  height={70}
-                />
+                <LogoFueg />
               </div>
               {typeof siteMetadata.headerTitle === 'string' ? (
                 <div
-                  className={`dark: dark: hidden h-6 text-3xl text-indigo-900 dark:text-white md:block ${fluidFont.className}`}
+                  className={`dark: dark: hidden h-6 text-3xl font-bold tracking-widest text-indigo-900 dark:text-white md:block ${fluidFont.className}`}
                 >
                   {siteMetadata.headerTitle}
                 </div>
@@ -42,14 +36,14 @@ const Header = ({ locale, fluidFont }) => {
             </div>
           </Link>
         </div>
-        <div className="light: flex items-center space-x-2 rounded-full border-solid bg-white p-1 px-4 leading-5 opacity-80 dark:bg-indigo-950 md:p-2 lg:space-x-4 ">
+        <div className="light: border-1 flex items-center space-x-2 rounded-full border-gray-100 bg-white p-1 px-4 leading-5 opacity-80 dark:border-indigo-900 dark:bg-indigo-950 md:p-2 lg:space-x-4 ">
           {headerNavLinks
             .filter((link) => link.href !== `/${locale}/`)
             .map((link) => (
               <Link
                 key={link.title}
                 href={link.href}
-                className="lg:text-md font-bold relative hidden w-fit text-gray-900 after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-black after:transition after:duration-300 after:content-[''] after:hover:scale-x-100 dark:text-gray-100 dark:after:bg-white sm:block sm:text-sm"
+                className="lg:text-md relative hidden w-fit font-bold text-gray-900 after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-black after:transition after:duration-300 after:content-[''] after:hover:scale-x-100 dark:text-gray-100 dark:after:bg-white sm:block sm:text-sm"
               >
                 {link.title}
               </Link>
