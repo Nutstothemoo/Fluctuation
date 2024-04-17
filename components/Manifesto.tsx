@@ -27,93 +27,102 @@ const Manifesto = async ({ params }) => {
   return (
     <div className="relative top-0 flex w-full items-center justify-center">
       <div className="flex flex-col">
-        <h3>{dictionary.manifesto3}</h3>
-        <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-          <div className="md:w-1/2">
-            <Image src={manifesto1} alt="EU" width={200} height={200} />
+        <div className="divide-y divide-gray-200 dark:divide-gray-700">
+          <div className="space-y-2 pb-8 pt-6 md:space-y-5">
+            <h1 className="md:leading-14 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl">
+              Manifesto
+            </h1>
+            <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+              {dictionary.manifesto3}
+            </p>
           </div>
-          <div className="md:w-1/2">
-            <Paragraph text={`${dictionary.manifesto4}`} />
+          <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+            <div className="md:w-1/2">
+              <Image src={manifesto1} alt="EU" width={200} height={200} />
+            </div>
+            <div className="md:w-1/2">
+              <Paragraph text={`${dictionary.manifesto4}`} />
+            </div>
           </div>
-        </div>
-        <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-          <div className="md:w-1/2">
-            <Image src={manifesto2} alt="m2" width={200} height={200} />
+          <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+            <div className="md:w-1/2">
+              <Image src={manifesto2} alt="m2" width={200} height={200} />
+            </div>
+            <div className="md:w-1/2">
+              <Paragraph text={`${dictionary.manifesto5}`} />
+            </div>
           </div>
-          <div className="md:w-1/2">
-            <Paragraph text={`${dictionary.manifesto5}`} />
+          <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+            <div className="md:w-1/2">
+              <Image src={manifesto3} alt="EU" width={200} height={200} />
+            </div>
+            <div className="md:w-1/2">
+              <Paragraph text={`${dictionary.manifesto6}`} />
+            </div>
           </div>
-        </div>
-        <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-          <div className="md:w-1/2">
-            <Image src={manifesto3} alt="EU" width={200} height={200} />
+          <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+            <div className="md:w-1/2">
+              <Image src={manifesto4} alt="m2" width={200} height={200} />
+            </div>
+            <div className="md:w-1/2">
+              <Paragraph text={`${dictionary.manifesto7}`} />
+            </div>
           </div>
-          <div className="md:w-1/2">
-            <Paragraph text={`${dictionary.manifesto6}`} />
+          <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+            <div className="md:w-1/2">
+              <Image src={manifesto5} alt="EU" width={200} height={200} />
+            </div>
+            <div className="md:w-1/2">
+              <Paragraph text={`${dictionary.manifesto8}`} />
+            </div>
           </div>
-        </div>
-        <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-          <div className="md:w-1/2">
-            <Image src={manifesto4} alt="m2" width={200} height={200} />
+          <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+            <div className="md:w-1/2">
+              <Image src={manifesto6} alt="m2" width={200} height={200} />
+            </div>
+            <div className="md:w-1/2">
+              <Paragraph text={`${dictionary.manifesto9}`} />
+            </div>
           </div>
-          <div className="md:w-1/2">
-            <Paragraph text={`${dictionary.manifesto7}`} />
+          <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+            <div className="md:w-1/2">
+              <Image src={manifesto7} alt="EU" width={200} height={200} />
+            </div>
+            <div className="md:w-1/2">
+              <Paragraph text={`${dictionary.manifesto10}`} />
+            </div>
           </div>
-        </div>
-        <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-          <div className="md:w-1/2">
-            <Image src={manifesto5} alt="EU" width={200} height={200} />
+          <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+            <div className="md:w-1/2">
+              <Image src={manifesto8} alt="m2" width={200} height={200} />
+            </div>
+            <div className="md:w-1/2">
+              <Paragraph text={`${dictionary.manifesto11}`} />
+            </div>
           </div>
-          <div className="md:w-1/2">
-            <Paragraph text={`${dictionary.manifesto8}`} />
+          <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+            <div className="md:w-1/2">
+              <Image src={manifesto9} alt="m2" width={200} height={200} />
+            </div>
+            <div className="md:w-1/2">
+              <Paragraph text={`${dictionary.manifesto12}`} />
+            </div>
           </div>
-        </div>
-        <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-          <div className="md:w-1/2">
-            <Image src={manifesto6} alt="m2" width={200} height={200} />
+          <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+            <div className="md:w-1/2">
+              <Image src={manifesto10} alt="m2" width={200} height={200} />
+            </div>
+            <div className="md:w-1/2">
+              <Paragraph text={`${dictionary.manifesto10}`} />
+            </div>
           </div>
-          <div className="md:w-1/2">
-            <Paragraph text={`${dictionary.manifesto9}`} />
-          </div>
-        </div>
-        <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-          <div className="md:w-1/2">
-            <Image src={manifesto7} alt="EU" width={200} height={200} />
-          </div>
-          <div className="md:w-1/2">
-            <Paragraph text={`${dictionary.manifesto10}`} />
-          </div>
-        </div>
-        <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-          <div className="md:w-1/2">
-            <Image src={manifesto8} alt="m2" width={200} height={200} />
-          </div>
-          <div className="md:w-1/2">
-            <Paragraph text={`${dictionary.manifesto11}`} />
-          </div>
-        </div>
-        <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-          <div className="md:w-1/2">
-            <Image src={manifesto9} alt="m2" width={200} height={200} />
-          </div>
-          <div className="md:w-1/2">
-            <Paragraph text={`${dictionary.manifesto12}`} />
-          </div>
-        </div>
-        <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-          <div className="md:w-1/2">
-            <Image src={manifesto10} alt="m2" width={200} height={200} />
-          </div>
-          <div className="md:w-1/2">
-            <Paragraph text={`${dictionary.manifesto10}`} />
-          </div>
-        </div>
-        <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-          <div className="md:w-1/2">
-            {/* <Image src={manifesto11} alt="m2" width={200} height={200} /> */}
-          </div>
-          <div className="md:w-1/2">
-            <Paragraph text={`${dictionary.manifesto11}`} />
+          <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+            <div className="md:w-1/2">
+              {/* <Image src={manifesto11} alt="m2" width={200} height={200} /> */}
+            </div>
+            <div className="md:w-1/2">
+              <Paragraph text={`${dictionary.manifesto11}`} />
+            </div>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ import Image from './Image'
 import Link from './Link'
 
 const Card = ({ title, description, imgSrc, href }) => (
-  <div className="md max-w-[544px] p-4 md:w-1/2">
+  <div className="md max-w-[544px] rounded-lg p-4 md:w-1/2">
     <div
       className={`${
         imgSrc && 'h-full'
@@ -42,7 +42,7 @@ const Card = ({ title, description, imgSrc, href }) => (
         {href && (
           <Link
             href={href}
-            className="text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+            className="text-primary-500 dark:hover:text-primary-400 text-base font-medium leading-6 hover:text-primary-600"
             aria-label={`Link to ${title}`}
           >
             Learn more &rarr;

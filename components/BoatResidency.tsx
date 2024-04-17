@@ -20,19 +20,28 @@ const BoatResidency = async ({ params }) => {
   const dictionary = await getDictionary(params.locale)
 
   return (
-    <div className="relative top-0 flex h-screen w-full flex-col items-center justify-center">
-      <div className="md:text-md text-justify sm:text-sm lg:text-xl">
-        <h3>{dictionary.boatline1}</h3>
-        {/* boatline 1-25 */}
+    <div className="relative top-0 flex w-full flex-col items-center justify-center">
+      {/* <div className="md:text-md text-justify sm:text-sm lg:text-xl">
+        <h3></h3> */}
+      <div className="divide-y divide-gray-500">
+        <div className="space-y-2 pb-8 pt-6 md:space-y-5">
+          <h1 className="md:leading-14 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-4xl">
+            {dictionary.boatline1}
+          </h1>
+          {/* <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+            List of future Events
+          </p> */}
+        </div>
       </div>
+      {/* boatline 1-25 */}
       <div>
         <Image src={eu} alt="EU" />
-        <Image src={Br1} alt="Br1" />
-        <Image src={Br2} alt="Br2" />
-        <Image src={Br3} alt="Br3" />
-        <Image src={Br4} alt="Br4" />
-        <Image src={Br5} alt="Br5" />
-        <Image src={Br6} alt="Br6" />
+        <Image src={Br1} width={300} className="rounded-xl" alt="Br1" />
+        <Image src={Br2} width={300} className="rounded-xl" alt="Br2" />
+        <Image src={Br3} width={300} className="rounded-xl" alt="Br3" />
+        <Image src={Br4} width={300} className="rounded-xl" alt="Br4" />
+        <Image src={Br5} width={300} className="rounded-xl" alt="Br5" />
+        <Image src={Br6} width={300} className="rounded-xl" alt="Br6" />
       </div>
     </div>
   )
