@@ -1,26 +1,22 @@
-interface Project {
-  title: string,
-  description: string,
-  href?: string,
-  imgSrc?: string,
+interface Festival {
+  title: string
+  description: string
+  href?: string
+  imgSrc?: string
 }
 
-const projectsData: Project[] = [
+const projectsData: Festival[] = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'ElectroFest',
+    description: `Experience the best of electronic music at ElectroFest. With performances from top DJs and producers from around the world, ElectroFest is the ultimate destination for electronic music fans.`,
+    imgSrc: '/static/images/electrofest.jpg',
+    href: 'https://www.electrofest.com',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: 'SynthWave',
+    description: `Travel back in time with SynthWave, a festival dedicated to the retro sounds of the 80s. Featuring a lineup of pioneering and modern synthwave artists, SynthWave is a must-visit for fans of synth-driven music.`,
+    imgSrc: '/static/images/synthwave.jpg',
+    href: '/blog/synthwave-festival',
   },
 ]
 

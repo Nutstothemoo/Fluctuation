@@ -11,7 +11,7 @@ import manifesto7 from '../public/assets/manifesto7.webp'
 import manifesto8 from '../public/assets/manifesto8.webp'
 import manifesto9 from '../public/assets/manifesto9.webp'
 import manifesto10 from '../public/assets/manifesto10.webp'
-import manifesto11 from '../public/assets/manifesto11.webp'
+// import manifesto11 from '../public/assets/manifesto11.webp'
 
 import Image from 'next/image'
 
@@ -110,7 +110,7 @@ const Manifesto = async ({ params }) => {
         </div>
         <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
           <div className="md:w-1/2">
-            <Image src={manifesto11} alt="m2" width={200} height={200} />
+            {/* <Image src={manifesto11} alt="m2" width={200} height={200} /> */}
           </div>
           <div className="md:w-1/2">
             <Paragraph text={`${dictionary.manifesto11}`} />
