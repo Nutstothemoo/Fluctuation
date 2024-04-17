@@ -1,10 +1,14 @@
-import Manifesto from "@/components/Manifesto";
+import Manifesto from '@/components/Manifesto'
+import SectionContainer from '@/components/SectionContainer'
 
-export default async function Page( { params: { locale } } ) {
-
+export default async function Page({ params: { locale } }) {
   return (
     <>
-      <Manifesto params={{ locale }} />
+      <div className="mt-48">
+        <SectionContainer>
+          <Manifesto params={{ locale }} />
+        </SectionContainer>
+      </div>
     </>
   )
 }

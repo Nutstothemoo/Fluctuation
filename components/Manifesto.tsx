@@ -25,7 +25,7 @@ const Manifesto = async ({ params }) => {
   const dictionary = await getDictionary(params.locale)
 
   return (
-    <div className="relative top-0 flex h-screen w-full items-center justify-center">
+    <div className="relative top-0 flex w-full items-center justify-center">
       <div className="flex flex-col">
         <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
           <div className="md:w-1/2">

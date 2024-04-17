@@ -1,9 +1,14 @@
-import BoatResidency from "@/components/BoatResidency";
+import BoatResidency from '@/components/BoatResidency'
+import SectionContainer from '@/components/SectionContainer'
 
-export default async function Page( { params: { locale } } ) {
+export default async function Page({ params: { locale } }) {
   return (
     <>
-        <BoatResidency params={{ locale }} />
+      <div className="mt-48">
+        <SectionContainer>
+          <BoatResidency params={{ locale }} />
+        </SectionContainer>
+      </div>
     </>
   )
 }
