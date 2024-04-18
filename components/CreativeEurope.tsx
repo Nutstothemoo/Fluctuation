@@ -30,30 +30,78 @@ const CreativeEurope = async ({ params }) => {
               Info about the Creative Europe Programme
             </p>
           </div>
-          <div className="md:text-md items-center text-justify sm:text-sm lg:text-xl">
-            <Image src={eu} alt="EU" width={300} className="rounded-xl" />
-            <Paragraph text={`${dictionary.line16} `} />
+          <div className="m-6 flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+            <div className="m-2 flex items-center justify-center p-2 md:w-1/2">
+              <Image src={eu} alt="EU" width={250} height={250} className="rounded-xl" />
+            </div>
+            <div className="flex flex-col items-center justify-center text-center md:w-1/2 md:text-start">
+              <div className="p-4">
+                <Paragraph text={`${dictionary.line16}`} />
+              </div>
+            </div>
           </div>
-          <div>
-            <div>
-              <Image src={smileImage} width={300} alt="smile" className="rounded-xl" />
-              <Paragraph text={`${dictionary.line21} `} />
+          <div className="flex flex-col-reverse space-y-4 p-2 md:flex-row md:space-x-4 md:space-y-0">
+            <div className="flex items-center justify-center text-center md:w-1/2 md:text-end">
+              <Paragraph text={`${dictionary.line21}`} />
             </div>
-            <div>
-              <Image src={creative2} width={300} alt="creative2" className="rounded-xl" />
-              <Paragraph text={`${dictionary.line17} `} />
+            <div className="m-2 flex items-center justify-center p-4 md:w-1/2">
+              <Image src={smileImage} alt="smile" width={250} height={250} className="rounded-xl" />
             </div>
-            <div>
-              <Image src={creative3} width={300} alt="creative3" className="rounded-xl" />
-              <Paragraph text={`${dictionary.line18} `} />
+          </div>
+          <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+            <div className="m-2 flex items-center justify-center p-4 md:w-1/2">
+              <Image
+                src={creative2}
+                alt="creative2"
+                width={250}
+                height={250}
+                className="rounded-xl"
+              />
             </div>
-            <div>
-              <Image src={creative4} width={300} alt="creative4" className="rounded-xl" />
-              <Paragraph text={`${dictionary.line19} `} />
+            <div className="flex items-center justify-center text-center md:w-1/2 md:text-start">
+              <Paragraph text={`${dictionary.line17}`} />
             </div>
-            <div>
-              <Image src={creative5} width={300} alt="creative5" className="rounded-xl" />
-              <Paragraph text={`${dictionary.line20} `} />
+          </div>
+          <div className="flex flex-col-reverse space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+            <div className="flex items-center justify-center p-2 text-center md:w-1/2 md:text-end">
+              <Paragraph text={`${dictionary.line18}`} />
+            </div>
+            <div className="m-2 flex items-center justify-center p-4 md:w-1/2">
+              <Image
+                src={creative3}
+                alt="creative3"
+                width={250}
+                height={250}
+                className="rounded-xl"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+            <div className="m-2 flex items-center justify-center p-4 md:w-1/2">
+              <Image
+                src={creative4}
+                alt="creative4"
+                width={250}
+                height={250}
+                className="rounded-xl"
+              />
+            </div>
+            <div className="flex items-center justify-center p-2 text-center md:w-1/2 md:text-start ">
+              <Paragraph text={`${dictionary.line19}`} />
+            </div>
+          </div>
+          <div className="flex flex-col-reverse space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+            <div className="flex items-center justify-center p-2 text-center md:w-1/2 md:text-end">
+              <Paragraph text={`${dictionary.line20}`} />
+            </div>
+            <div className="m-2 flex items-center justify-center p-4 text-center md:w-1/2 md:text-start">
+              <Image
+                src={creative5}
+                alt="creative5"
+                width={250}
+                height={250}
+                className="rounded-xl"
+              />
             </div>
           </div>
         </div>

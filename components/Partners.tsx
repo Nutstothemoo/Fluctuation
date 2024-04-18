@@ -19,21 +19,21 @@ const Partners = async () => {
             </p>
           </div>
           <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-            <p className="my-4 text-center text-lg font-semibold">Media</p>
-            <div className="flex items-center justify-center">
-              <Image src={media} width={500} alt="media partners" />
+            <div className="my-4 text-center text-lg font-semibold">Media</div>
+            <div className="flex items-center justify-center rounded-xl bg-white">
+              <Image src={media} width={500} alt="media partners" className="rounded-xl" />
             </div>
-            <p className="my-4 text-center text-lg font-semibold">Financial</p>
-            <div className="flex items-center justify-center">
-              <Image src={partner1} width={500} alt="financial partners" />
+            <div className="my-4 text-center text-lg font-semibold">Financial</div>
+            <div className="flex items-center justify-center rounded-xl bg-white">
+              <Image src={partner1} width={500} alt="financial partners" className="rounded-xl" />
             </div>
-            <p className="my-4 text-center text-lg font-semibold">Cultural & Impact</p>
-            <div className="flex items-center justify-center">
-              <Image src={culture} width={900} alt="impact partners" />
+            <div className="my-4 text-center text-lg font-semibold">Cultural & Impact</div>
+            <div className="flex items-center justify-center rounded-xl bg-white">
+              <Image src={culture} width={900} alt="impact partners" className="rounded-xl" />
             </div>
-            <p className="my-4 text-center text-lg font-semibold">Technical</p>
-            <div className="flex items-center justify-center">
-              <Image src={technical} width={700} alt="technical partner" />
+            <div className="my-4 text-center text-lg font-semibold">Technical</div>
+            <div className="flex items-center justify-center rounded-xl bg-white">
+              <Image src={technical} width={700} alt="technical partner" className="rounded-xl" />
             </div>
           </div>
         </div>
