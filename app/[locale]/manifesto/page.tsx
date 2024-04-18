@@ -1,5 +1,6 @@
 import Manifesto from '@/components/Manifesto'
 import SectionContainer from '@/components/SectionContainer'
+import AnimatedBackground from '@/components/AnimatedBackground'
 
 export default async function Page({ params: { locale } }) {
   return (
@@ -8,6 +9,7 @@ export default async function Page({ params: { locale } }) {
         <SectionContainer>
           <Manifesto params={{ locale }} />
         </SectionContainer>
+        <AnimatedBackground />
       </div>
     </>
   )

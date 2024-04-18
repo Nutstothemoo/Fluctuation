@@ -1,3 +1,4 @@
+import AnimatedBackground from '@/components/AnimatedBackground'
 import Partners from '@/components/Partners'
 import SectionContainer from '@/components/SectionContainer'
 
@@ -8,6 +9,7 @@ export default async function Page({ params: { locale } }) {
         <SectionContainer>
           <Partners />
         </SectionContainer>
+        <AnimatedBackground />
       </div>
     </>
   )

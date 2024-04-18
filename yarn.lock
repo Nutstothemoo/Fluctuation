@@ -1981,6 +1981,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/is-prop-valid@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "@emotion/is-prop-valid@npm:1.2.2"
+  dependencies:
+    "@emotion/memoize": ^0.8.1
+  checksum: 61f6b128ea62b9f76b47955057d5d86fcbe2a6989d2cd1e583daac592901a950475a37d049b9f7a7c6aa8758a33b408735db759fdedfd1f629df0f85ab60ea25
+  languageName: node
+  linkType: hard
+
 "@emotion/memoize@npm:^0.8.1":
   version: 0.8.1
   resolution: "@emotion/memoize@npm:0.8.1"
@@ -6458,7 +6467,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:^11.0.28":
+"framer-motion@npm:^11.1.3":
   version: 11.1.3
   resolution: "framer-motion@npm:11.1.3"
   dependencies:
@@ -11814,6 +11823,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "tailwind-nextjs-starter-blog@workspace:."
   dependencies:
+    "@emotion/is-prop-valid": ^1.2.2
     "@next/bundle-analyzer": 14.1.4
     "@radix-ui/react-dropdown-menu": ^2.0.6
     "@radix-ui/react-navigation-menu": ^1.1.4
@@ -11837,7 +11847,7 @@ __metadata:
     eslint-config-prettier: ^8.8.0
     eslint-plugin-prettier: ^5.0.0
     flag-icons: ^7.2.1
-    framer-motion: ^11.0.28
+    framer-motion: ^11.1.3
     github-slugger: ^2.0.0
     gray-matter: ^4.0.2
     husky: ^9.0.0

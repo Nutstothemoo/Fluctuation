@@ -5,7 +5,7 @@ import culture from '../public/assets/culture.webp'
 import Image from 'next/image'
 import media from '../public/assets/media.webp'
 
-const Partners = async () => {
+const Partners = () => {
   return (
     <div className="relative top-0 flex w-full items-center justify-center">
       <div className="flex flex-col">
