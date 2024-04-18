@@ -1,3 +1,4 @@
+import AnimatedBackground from '@/components/AnimatedBackground'
 import BoatResidency from '@/components/BoatResidency'
 import SectionContainer from '@/components/SectionContainer'
 
@@ -8,6 +9,7 @@ export default async function Page({ params: { locale } }) {
         <SectionContainer>
           <BoatResidency params={{ locale }} />
         </SectionContainer>
+        <AnimatedBackground />
       </div>
     </>
   )

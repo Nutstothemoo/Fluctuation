@@ -2,6 +2,7 @@ import projectsData from '@/data/projectsData'
 import Card from '@/components/Card'
 import { genPageMetadata } from 'app/seo'
 import SectionContainer from '@/components/SectionContainer'
+import AnimatedBackground from '@/components/AnimatedBackground'
 
 export const metadata = genPageMetadata({ title: 'Projects' })
 
@@ -35,6 +36,7 @@ export default function Projects() {
           </div>
         </SectionContainer>
       </div>
+      <AnimatedBackground />
     </>
   )
 }

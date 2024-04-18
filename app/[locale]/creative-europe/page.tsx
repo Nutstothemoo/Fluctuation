@@ -1,3 +1,4 @@
+import AnimatedBackground from '@/components/AnimatedBackground'
 import CreativeEurope from '@/components/CreativeEurope'
 import SectionContainer from '@/components/SectionContainer'
 
@@ -10,6 +11,7 @@ export default async function Page({ params: { locale } }) {
         <SectionContainer>
           <CreativeEurope params={{ locale }} />
         </SectionContainer>
+        <AnimatedBackground />
       </div>
     </>
   )
