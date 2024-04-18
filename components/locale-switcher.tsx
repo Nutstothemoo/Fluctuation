@@ -10,7 +10,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from './ui/dropdown-menu'
+} from '../@/components/ui/dropdown-menu'
 export default function LocaleSwitcher({ locale }) {
   const [isOpen, setIsOpen] = useState(false)
   const pathName = usePathname()
