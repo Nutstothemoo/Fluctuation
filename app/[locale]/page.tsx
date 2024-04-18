@@ -18,20 +18,20 @@ const fluidFont = localFont({
   display: 'swap',
 })
 
-export default async function Page( { params: { locale } } ) {
+export default async function Page({ params: { locale } }) {
   // const sortedPosts = sortPosts(allBlogs)
   // const posts = allCoreContent(sortedPosts)
   return (
     <>
       <Background />
       <SectionContainer>
-          <SplashScreen fluidFont={fluidFont} />
-          <FirstPage params={{ locale }} />
-          <SecondPage params={{ locale }} />
-          <ThirdPage  params={{ locale }} />
-          <FourthPage params={{ locale }} />
-          <FivePage params={{ locale }} />
-          <SixPage params={{ locale }} />
+        <SplashScreen fluidFont={fluidFont} />
+        <FirstPage params={{ locale }} />
+        <SecondPage params={{ locale }} />
+        <ThirdPage params={{ locale }} />
+        <FourthPage params={{ locale }} />
+        <FivePage params={{ locale }} />
+        <SixPage params={{ locale }} />
       </SectionContainer>
 
       {/* <Main posts={posts} /> */}
