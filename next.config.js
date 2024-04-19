@@ -63,10 +63,15 @@ module.exports = () => {
 		reactStrictMode: true,
 		pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
 		images: {
+			domains: ["i.ibb.co"],
 			remotePatterns: [
 				{
 					protocol: "https",
 					hostname: "picsum.photos",
+				},
+				{
+					protocol: "https",
+					hostname: "ibbi.ibb.co",
 				},
 			],
 		},
