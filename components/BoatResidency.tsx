@@ -52,46 +52,46 @@ const BoatResidency = async ({ params }) => {
 					</div>
 				</div>
 				{/* PARTIE 2 FORM ET INFO */}
-				<div className="flex flex-row space-x-6">
-            <div className="flex flex-col" >
-              <Image src={Br3} width={600} className="rounded-xl shadow-lg" alt="Br3" />
-            </div>
-          <div className="flex flex-col space-y-6">
-              <Image src={Br4} width={200} className="rounded-xl shadow-md" alt="Br4" />
-              <Image src={Br5} width={200} className="rounded-xl shadow-md" alt="Br5" />
-              <Image src={Br6} width={200} className="rounded-xl shadow-md" alt="Br6" />
-          </div>
+				<div className="items-center mx-auto">
+					<div className="flex flex-col space-y-6 sm:flex-row sm:space-x-6 sm:space-y-0">
+						<Image src={Br3} width={550} height={550} className="rounded-xl shadow-lg" alt="Br3" />
+						<div className="flex flex-row md:flex-col space-y-6 space-x-3 md:space-x-0">
+							<Image src={Br4} width={200} className="rounded-xl shadow-md" alt="Br4" />
+							<Image src={Br5} width={200} className="rounded-xl shadow-md" alt="Br5" />
+							<Image src={Br6} width={200} className="rounded-xl shadow-md" alt="Br6" />
+						</div>
+					</div>
 				</div>
-        <div className="space-y-2 flex flex-col">
-                <p className="text-lg font-semibold">{dictionary.boatline6}</p>
-                <ul className="list-disc list-inside space-y-1">
-                  <li className="text-sm">{dictionary.boatline7}</li>
-                  <li className="text-sm">{dictionary.boatline8}</li>
-                </ul>
-              <div>
-                  <Paragraph text={`${dictionary.boatline9}`} />
-              </div>
-              <div>
-                  <Paragraph text={`${dictionary.boatline10}`} />
-              </div>
-              <div>
-                  <Paragraph text={`${dictionary.boatline11}`} />
-              </div>
-              <div>
-                  <Paragraph text={`${dictionary.boatline12}`} />
-              </div>
-            </div>
-        {/* PARTIE 3 */}
-        <div className="flex flex-col space-y-8 md:space-x-4 md:space-y-0 text-center italic">
+				<div className="space-y-2 flex flex-col">
+					<p className="text-lg font-semibold">{dictionary.boatline6}</p>
+					<ul className="list-disc list-inside space-y-1">
+						<li className="text-sm">{dictionary.boatline7}</li>
+						<li className="text-sm">{dictionary.boatline8}</li>
+					</ul>
 					<div>
-          <Paragraph text={`${dictionary.boatline13}`} />
-          </div>
-          <div> 
-          <Paragraph text={`${dictionary.boatline14}`} />
-          </div>
-          <div>
-          <Paragraph text={`${dictionary.boatline15}`} />
-          </div>					
+						<Paragraph text={`${dictionary.boatline9}`} />
+					</div>
+					<div>
+						<Paragraph text={`${dictionary.boatline10}`} />
+					</div>
+					<div>
+						<Paragraph text={`${dictionary.boatline11}`} />
+					</div>
+					<div>
+						<Paragraph text={`${dictionary.boatline12}`} />
+					</div>
+				</div>
+				{/* PARTIE 3 */}
+				<div className="flex flex-col space-y-8 md:space-x-4 md:space-y-0 text-center italic">
+					<div>
+						<Paragraph text={`${dictionary.boatline13}`} />
+					</div>
+					<div>
+						<Paragraph text={`${dictionary.boatline14}`} />
+					</div>
+					<div>
+						<Paragraph text={`${dictionary.boatline15}`} />
+					</div>
 				</div>
 			</div>
 		</div>
