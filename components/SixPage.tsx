@@ -24,7 +24,7 @@ const SixPage = async ({ params }) => {
           text={`  ${dictionary.line13} `}
         />
        </div>
-       <div className="md:text-md text-center sm:text-sm lg:text-xl mb-8">
+       <div className="md:text-md text-center sm:text-sm lg:text-xl mb-8 font-semibold">
         <Paragraph
           text={`  ${dictionary.line14} `}
         />

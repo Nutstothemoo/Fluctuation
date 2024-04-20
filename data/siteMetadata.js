@@ -9,13 +9,9 @@ const siteMetadata = {
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'address@yoursite.com',
-  twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
-  threads: 'https://www.threads.net',
-  instagram: 'https://www.instagram.com',
+  email: 'fluctuationsfestival@gmail.com',
+  linkedin: 'https://www.linkedin.com/company/fluctuationsfestival/',
+  instagram: 'https://www.instagram.com/fluctuations',
   locale: 'en',
   analytics: {
     // If you want to use an analytics provider you have to add it to the

@@ -17,9 +17,9 @@ const FivePage = async ({ params }) => {
 			<h2 className="text-center text-lg font-bold md:text-4xl mb-10">{dictionary.fivePageTile}</h2>
 			<Image src={festiboat3} alt="festiboat3" width={800} />
 
-			<div className="md:text-md text-center sm:text-sm lg:text-xl">
+			<div className="md:text-md text-center sm:text-sm lg:text-xl font-semibold italic">
 				<Paragraph
-					text={`  ${dictionary.line1}
+					text={`${dictionary.line1}
           ${dictionary.line2}
           ${dictionary.line3}
           ${dictionary.line4}`}

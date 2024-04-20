@@ -3,41 +3,40 @@
 import Image from 'next/image'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination } from 'swiper/modules'
+import { A11y, Scrollbar, Navigation, Pagination } from 'swiper/modules'
 
 import { images } from '@/images'
+import 'swiper/css/bundle'
 
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
 
 export default function CarousselSlide() {
   return (
-    <section className='py-12 px-4 sm:px-6 lg:px-8 w-5/6 max-w-4xl mx-auto'>
-      <div className='mx-auto'>
-        <Swiper
-          navigation={true}
-          spaceBetween={10}
-          loop={true}
-          modules={[Navigation, Pagination]}
-          onSwiper={swiper => console.log(swiper)}
-          className='h-96 w-full rounded-lg'
-        >
-          {images.map((image, index) => (
-            <SwiperSlide
-              className='rounded-lg h-full w-full max-w-4xl mx-auto' 
-              key={index}>
-              <div className='flex h-full w-full items-center justify-center'>
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  className='h-full w-full object-cover'
-                />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-    </section>
+<section className='py-8 px-4 sm:px-6 lg:px-8 w-full lg:w-2/3 max-w-4xl mx-auto overflow-hidden'>
+  <div className='mx-auto w-full'>
+    <Swiper
+      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={10}
+      slidesPerView={1}
+      scrollbar={{ draggable: true }}
+      loop={true}
+      onSwiper={swiper => console.log(swiper)}
+      className='w-80 h-60 md:h-full md:w-full rounded-xl overflow-hidden'
+    >
+      {images.map((image, index) => (
+        <SwiperSlide
+          className='rounded-lg h-full w-full mx-auto overflow-hidden' 
+          key={index}>
+          <div className='flex h-full w-full items-center justify-center'>
+            <Image
+              src={image.src}
+              alt={image.alt}
+              className='h-full w-full object-cover rounded-lg'
+            />
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  </div>
+</section>
   )
 }

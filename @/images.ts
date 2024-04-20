@@ -7,7 +7,7 @@ import festiboat from '../public/assets/festiboat.jpg'
 
 
 export const images = [
-  { src: festiboat2, alt: 'First' },
+  // { src: festiboat2, alt: 'First' },
   { src: festiboat, alt: 'Second' },
   { src: festiboat3, alt: 'Third' },
   { src: festiboat4, alt: 'Fourth' },
