@@ -13,10 +13,9 @@ const ThirdPage = async ({ params }) => {
 
   return (
     <div className="relative top-0 flex min-h-screen w-full items-center justify-center">
-      <div className="flex flex-col justify-center gap-6 sm:flex-row">
-      <div className="-m-4 flex flex-wrap"></div>
-        
-        <div className="md max-w-[544px] rounded-lg p-4 md:w-1/2">
+      <div className="flex flex-col items-center justify-center gap-6 sm:flex-row">
+     
+        <div className="w-[300px] rounded-lg p-2 md:w-1/2">
           <div
             className={'h-full overflow-hidden rounded-md border-2 border-gray-200 border-opacity-60 dark:border-gray-700'}
           >
@@ -46,7 +45,7 @@ const ThirdPage = async ({ params }) => {
           </div>
         </div>
 
-      <div className="md max-w-[544px] rounded-lg p-4 md:w-1/2">
+      <div className="w-[300px] rounded-lg p-2 md:w-1/2">
           <div
             className={'h-full overflow-hidden rounded-md border-2 border-gray-200 border-opacity-60 dark:border-gray-700'}
           >

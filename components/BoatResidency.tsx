@@ -52,8 +52,8 @@ const BoatResidency = async ({ params }) => {
 					</div>
 					<div className="p-6 md:p-10 items-center mx-auto">
 					<div className="flex flex-col space-y-6 sm:flex-row sm:space-x-6 sm:space-y-0">
-						<Image src={Br3} width={550} height={550} className="rounded-xl shadow-lg" alt="Br3" />
-						<div className="flex flex-row md:flex-col space-y-6 space-x-3 md:space-x-0">
+						<Image src={Br3} width={550} height={550} className="md:rounded-xl shadow-lg" alt="Br3" />
+						<div className="flex flex-row md:flex-col overflow-hidden space-y-6 space-x-3 md:space-x-0">
 							<Image src={Br4} width={200} className="rounded-xl shadow-md" alt="Br4" />
 							<Image src={Br5} width={200} className="rounded-xl shadow-md" alt="Br5" />
 							<Image src={Br6} width={200} className="rounded-xl shadow-md" alt="Br6" />
