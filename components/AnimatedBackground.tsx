@@ -3,14 +3,14 @@ import Image from "next/image";
 import natureGauche from "../public/assets/natureGauche.png";
 import feuilleDroite from "../public/assets/feuilleDroite.png";
 
-const AnimatedBackground = () => {
+const AnimatedBackground = () => { 
 	return (
-		<div className="absolute inset-0">
-			<div className="fixed bottom-0 left-0">
-				<Image src={natureGauche} alt="Left Nature" width={150} height={300} />
+		<div className="absolute">
+			<div className="fixed bottom-0 left-0 w-16 md:w-32 xl:64">
+				<Image src={natureGauche} alt="Left Nature"  />
 			</div>
-			<div className="fixed top-10 right-0 ">
-				<Image src={feuilleDroite} alt="Right Nature" width={100} height={100} />
+			<div className="fixed top-0 right-0 w-16 md:w-32 xl:w-64 ">
+				<Image src={feuilleDroite} alt="Right Nature" />
 			</div>
 		</div>
 	);

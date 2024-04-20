@@ -20,40 +20,40 @@ const AnimatedBackgroundHome = ({ containerRef }) => {
         target: containerRef,
         offset: ['start end', 'end start']
     });	
-
+    console.log(scrollYProgress)
     return (
         <div className="absolute inset-0">
             <motion.div 
-                className="fixed bottom-0 left-0" 
+                className="fixed bottom-0 left-0 w-32 md:w-64 xl:90 z-60" 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
             >
-                <Image src={natureGauche} alt="Left Nature" width={150} height={300} />
+                <Image src={natureGauche} alt="Left Nature" />
             </motion.div>
             <motion.div 
-                className="fixed top-10 right-0" 
+                className="fixed top-10 right-0 w-10 h-10 md:w-16 xl:w-64 z-60" 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
             >
-                <Image src={feuilleDroite} alt="Right Nature" width={100} height={100} />
+                <Image src={feuilleDroite} alt="Right Nature" />
             </motion.div>
-            <motion.div 
-                className="fixed bottom-50 left-50" 
+            {/* <motion.div 
+                className="fixed top-20 left-20 h-32 w-32 z-60" 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
             >
-                <Image src={bateau} alt="bateau" width={100} height={100} />
-            </motion.div>
+                <Image src={bateau} alt="bateau"  />
+            </motion.div> */}
             <motion.div 
-                className="fixed bottom-0 right-0" 
+                className="fixed bottom-0 right-0 w-16 md:w-32 xl:w-64 z-60" 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
             >
-                <Image src={casquettebalcon} alt="casquettebalcon" width={100} height={100} />
+                <Image src={casquettebalcon} alt="casquettebalcon" />
             </motion.div>
         </div>
     );
