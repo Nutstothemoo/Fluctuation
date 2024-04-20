@@ -11,7 +11,7 @@ import 'swiper/css/bundle'
 
 export default function CarousselSlide() {
   return (
-<section className='py-8 px-4 sm:px-6 lg:px-8 w-full lg:w-2/3 max-w-4xl mx-auto overflow-hidden'>
+<section className='z-0 py-8 px-4 sm:px-6 lg:px-8 w-full lg:w-2/3 max-w-4xl mx-auto overflow-hidden'>
   <div className='mx-auto w-full'>
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -20,17 +20,17 @@ export default function CarousselSlide() {
       scrollbar={{ draggable: true }}
       loop={true}
       onSwiper={swiper => console.log(swiper)}
-      className='w-80 h-60 md:h-full md:w-full rounded-xl overflow-hidden'
+      className=' w-80 h-60 md:h-full md:w-full rounded-xl overflow-hidden'
     >
       {images.map((image, index) => (
         <SwiperSlide
-          className='rounded-lg h-full w-full mx-auto overflow-hidden' 
+          className='z-10 rounded-lg h-full w-full mx-auto overflow-hidden' 
           key={index}>
           <div className='flex h-full w-full items-center justify-center'>
             <Image
               src={image.src}
               alt={image.alt}
-              className='h-full w-full object-cover rounded-lg'
+              className='z-10 h-full w-full object-cover rounded-lg'
             />
           </div>
         </SwiperSlide>

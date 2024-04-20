@@ -20,14 +20,18 @@ const AnimatedBackgroundHome = ({ containerRef }) => {
         target: containerRef,
         offset: ['start end', 'end start']
     });	
-    console.log(scrollYProgress)
-    return (
+    const y = useTransform(scrollYProgress, [0, 1], [0, 60]);
+    const x = useTransform(scrollYProgress, [0, 1], [0, -60])
+    const y2 =useTransform(scrollYProgress, [0,1], [0, 40]); // Adjust these values to create the desired parallax effect
+    const y3 = useTransform(scrollYProgress, [0, 1], [50, 5]);
+        return (
         <div className="absolute inset-0">
             <motion.div 
                 className="fixed bottom-0 left-0 w-32 md:w-64 xl:90 z-60" 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
+                style={{x , y:y2}}
             >
                 <Image src={natureGauche} alt="Left Nature" />
             </motion.div>
@@ -36,6 +40,7 @@ const AnimatedBackgroundHome = ({ containerRef }) => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
+                style={{ y }}
             >
                 <Image src={feuilleDroite} alt="Right Nature" />
             </motion.div>
@@ -52,6 +57,7 @@ const AnimatedBackgroundHome = ({ containerRef }) => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
+                style={{y:y3}}
             >
                 <Image src={casquettebalcon} alt="casquettebalcon" />
             </motion.div>

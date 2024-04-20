@@ -5,7 +5,7 @@ import feuilleDroite from "../public/assets/feuilleDroite.png";
 
 const AnimatedBackground = () => { 
 	return (
-		<div className="absolute">
+		<div className="z-60 absolute">
 			<div className="fixed bottom-0 left-0 w-16 md:w-32 xl:64">
 				<Image src={natureGauche} alt="Left Nature"  />
 			</div>

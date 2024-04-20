@@ -13,7 +13,7 @@ const AnimatedSplash = ({ subTitle }) => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
-          <Image src={fluctuationGIF} alt="Centered Gif" width={700} height={300} />
+          <Image src={fluctuationGIF} alt="Centered Gif" width={1000} height={900} />
         </motion.div>
         <motion.p
           style={{ color: '#11458D' }}
