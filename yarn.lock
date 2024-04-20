@@ -1618,7 +1618,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.12.0, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.23.9, @babel/runtime@npm:^7.24.0, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.8.7":
+"@babel/runtime@npm:^7.12.0, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.23.9, @babel/runtime@npm:^7.24.1, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.8.7":
   version: 7.24.4
   resolution: "@babel/runtime@npm:7.24.4"
   dependencies:
@@ -2690,14 +2690,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@opentelemetry/api@npm:^1.0.0":
-  version: 1.4.1
-  resolution: "@opentelemetry/api@npm:1.4.1"
-  checksum: e783c40d1a518abf9c4c5d65223237c1392cd9a6c53ac6e2c3ef0c05ff7266e3dfc4fd9874316dae0dcb7a97950878deb513bcbadfaad653d48f0215f2a0911b
-  languageName: node
-  linkType: hard
-
-"@opentelemetry/api@npm:^1.7.0":
+"@opentelemetry/api@npm:^1.0.0, @opentelemetry/api@npm:^1.7.0":
   version: 1.8.0
   resolution: "@opentelemetry/api@npm:1.8.0"
   checksum: 0e32079975f05bee6de2ad8ade097f0afdc63f462c76550150fce2444c73ab92aaf851ac85e638b6e3b269da6640ac7e63f33913a0fd7df9f9beec2e100759df
@@ -5554,46 +5547,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.740
-  resolution: "electron-to-chromium@npm:1.4.740"
-  checksum: be279e39c79c500b9b72a471781b91e9a3c339124afa93a7429448bf17256258ecbb0f61550e26ad7ecff5767786d1a78738c7c6e468d3458679989a8d96c9bb
-  languageName: node
-  linkType: hard
-
-"embla-carousel-autoplay@npm:^8.0.2":
-  version: 8.0.2
-  resolution: "embla-carousel-autoplay@npm:8.0.2"
-  peerDependencies:
-    embla-carousel: 8.0.2
-  checksum: 61d4ac511a15242828498664a97af4c4982ee152946a97cee3031037779e5c965ef3c85919541e669261eb4ae563f52420c36edd9e5a00c891043b896d469bfd
-  languageName: node
-  linkType: hard
-
-"embla-carousel-react@npm:^8.0.2":
-  version: 8.0.2
-  resolution: "embla-carousel-react@npm:8.0.2"
-  dependencies:
-    embla-carousel: 8.0.2
-    embla-carousel-reactive-utils: 8.0.2
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.1 || ^18.0.0
-  checksum: ec783d3a59478cd981a15e2d75f2f1e9f831b9011bcb189dd5c21ffd68ad632339fd50ff984a5ff6b4c7bf5a50ccc97caa14ae37f6eb4b80b1fa400cc68c7558
-  languageName: node
-  linkType: hard
-
-"embla-carousel-reactive-utils@npm:8.0.2":
-  version: 8.0.2
-  resolution: "embla-carousel-reactive-utils@npm:8.0.2"
-  peerDependencies:
-    embla-carousel: 8.0.2
-  checksum: 09cd5dc45709cc61129ca5b08d2b4e39015b8e068eb11a1043966144cec68bec9d255830b3e1f642dc5a55786d11215c7684153aa49540e8b3a4567af66b9c93
-  languageName: node
-  linkType: hard
-
-"embla-carousel@npm:8.0.2":
-  version: 8.0.2
-  resolution: "embla-carousel@npm:8.0.2"
-  checksum: e454a68b952883a18eed4ab39e88846825b5625f883593b0921f5c044b0244594386fa05950b788797d704bc8272973bda5a8b0cb825de6c1aa5bd9370f325f1
+  version: 1.4.745
+  resolution: "electron-to-chromium@npm:1.4.745"
+  checksum: f73b576108863cad160deb22b8e8c6754a8b16b22cda90cfce038a755f886be9c03fb8360bbd7c9d28ddd184800d0d6bd430a11f9289316145f0b28321dfe71d
   languageName: node
   linkType: hard
 
@@ -6505,8 +6461,8 @@ __metadata:
   linkType: hard
 
 "framer-motion@npm:^11.1.3":
-  version: 11.1.3
-  resolution: "framer-motion@npm:11.1.3"
+  version: 11.1.7
+  resolution: "framer-motion@npm:11.1.7"
   dependencies:
     tslib: ^2.4.0
   peerDependencies:
@@ -6520,7 +6476,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 9ce202d7ae21e817ed7ac4f17ade31c07181158daad9bdad9626cee41001dad4a747f5a64ef10f0b15b182cf83446e0b017586203d31ab9d254e85f01a79368c
+  checksum: ba4f2f0823eec7b78fa87180545cf8c832929ce52de8bab34312a67bfd6dee4ab6ad17143b9df2efcd4ede7cb87fc326843a1101a6cad3031c89a6ad2160e037
   languageName: node
   linkType: hard
 
@@ -11855,11 +11811,11 @@ __metadata:
   linkType: hard
 
 "tailwind-merge@npm:^2.2.2":
-  version: 2.2.2
-  resolution: "tailwind-merge@npm:2.2.2"
+  version: 2.3.0
+  resolution: "tailwind-merge@npm:2.3.0"
   dependencies:
-    "@babel/runtime": ^7.24.0
-  checksum: 3ab9bfa50320cba77c929ebde42a0befb10c394de2a66a953f7db71f27ca1e96a5c7382a56d001545dbcb8721d8145394a7dfd41bb269a789fc37a3bfabd1f62
+    "@babel/runtime": ^7.24.1
+  checksum: 1254eea9b6ec480911f01e2909e3ba35ca3c534d9db1405dfe9bdf51d100663a3935cb20662c023ab44ee9679bce10d86bd27beba23d0174beff32a6acb06978
   languageName: node
   linkType: hard
 
@@ -11886,8 +11842,6 @@ __metadata:
     clsx: ^2.1.0
     contentlayer2: 0.4.4
     cross-env: ^7.0.3
-    embla-carousel-autoplay: ^8.0.2
-    embla-carousel-react: ^8.0.2
     esbuild: 0.20.2
     eslint: ^8.45.0
     eslint-config-next: 14.1.0
@@ -12824,9 +12778,9 @@ __metadata:
   linkType: hard
 
 "zod@npm:^3.22.4":
-  version: 3.22.4
-  resolution: "zod@npm:3.22.4"
-  checksum: 80bfd7f8039b24fddeb0718a2ec7c02aa9856e4838d6aa4864335a047b6b37a3273b191ef335bf0b2002e5c514ef261ffcda5a589fb084a48c336ffc4cdbab7f
+  version: 3.22.5
+  resolution: "zod@npm:3.22.5"
+  checksum: a7b47685ce53b62d2d895c07b1cc0277ef1eb258736ae2b4b526d0b4cbe94a1fb39a260882e2624af2d59af8533373c0a96d36d71c19e79c341057ea9f528561
   languageName: node
   linkType: hard
 
