@@ -25,8 +25,8 @@ export default function LocaleSwitcher({ locale }) {
   const toggleDropdown = () => setIsOpen(!isOpen)
 
   return (
-    <div>
-      <DropdownMenu>
+    <div style={{ overflow: 'visible', position: 'relative' }}>
+        <DropdownMenu >
         <DropdownMenuTrigger>
           <CountryFlag
             onClick={toggleDropdown}
@@ -39,10 +39,11 @@ export default function LocaleSwitcher({ locale }) {
         <DropdownMenuContent className="mt-1  rounded-2xl bg-white opacity-80 dark:bg-indigo-950">
           {i18n.locales
             .filter((local) => local !== locale)
-            .map((local) => {
+            .map((local, i) => {
               return (
                 // eslint-disable-next-line react/jsx-key
                 <DropdownMenuItem
+                  key={i}
                   className={
                     'flex h-full w-full select-none flex-col justify-end rounded-md p-1 no-underline outline-none focus:shadow-md'
                   }

@@ -3402,7 +3402,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/react-slot@npm:1.0.2":
+"@radix-ui/react-slot@npm:1.0.2, @radix-ui/react-slot@npm:^1.0.2":
   version: 1.0.2
   resolution: "@radix-ui/react-slot@npm:1.0.2"
   dependencies:
@@ -5557,6 +5557,43 @@ __metadata:
   version: 1.4.740
   resolution: "electron-to-chromium@npm:1.4.740"
   checksum: be279e39c79c500b9b72a471781b91e9a3c339124afa93a7429448bf17256258ecbb0f61550e26ad7ecff5767786d1a78738c7c6e468d3458679989a8d96c9bb
+  languageName: node
+  linkType: hard
+
+"embla-carousel-autoplay@npm:^8.0.2":
+  version: 8.0.2
+  resolution: "embla-carousel-autoplay@npm:8.0.2"
+  peerDependencies:
+    embla-carousel: 8.0.2
+  checksum: 61d4ac511a15242828498664a97af4c4982ee152946a97cee3031037779e5c965ef3c85919541e669261eb4ae563f52420c36edd9e5a00c891043b896d469bfd
+  languageName: node
+  linkType: hard
+
+"embla-carousel-react@npm:^8.0.2":
+  version: 8.0.2
+  resolution: "embla-carousel-react@npm:8.0.2"
+  dependencies:
+    embla-carousel: 8.0.2
+    embla-carousel-reactive-utils: 8.0.2
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.1 || ^18.0.0
+  checksum: ec783d3a59478cd981a15e2d75f2f1e9f831b9011bcb189dd5c21ffd68ad632339fd50ff984a5ff6b4c7bf5a50ccc97caa14ae37f6eb4b80b1fa400cc68c7558
+  languageName: node
+  linkType: hard
+
+"embla-carousel-reactive-utils@npm:8.0.2":
+  version: 8.0.2
+  resolution: "embla-carousel-reactive-utils@npm:8.0.2"
+  peerDependencies:
+    embla-carousel: 8.0.2
+  checksum: 09cd5dc45709cc61129ca5b08d2b4e39015b8e068eb11a1043966144cec68bec9d255830b3e1f642dc5a55786d11215c7684153aa49540e8b3a4567af66b9c93
+  languageName: node
+  linkType: hard
+
+"embla-carousel@npm:8.0.2":
+  version: 8.0.2
+  resolution: "embla-carousel@npm:8.0.2"
+  checksum: e454a68b952883a18eed4ab39e88846825b5625f883593b0921f5c044b0244594386fa05950b788797d704bc8272973bda5a8b0cb825de6c1aa5bd9370f325f1
   languageName: node
   linkType: hard
 
@@ -11790,6 +11827,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"swiper@npm:^11.1.1":
+  version: 11.1.1
+  resolution: "swiper@npm:11.1.1"
+  checksum: fb3b12034f94036a32c3d229cc2a630d281d56100ec78f948a69d7a49892f6c744291e2a2c6ed89c0058dcb8718c24cc8535194c4a1e42f4de4f59c961472ee1
+  languageName: node
+  linkType: hard
+
 "sync-fetch@npm:^0.4.1":
   version: 0.4.5
   resolution: "sync-fetch@npm:0.4.5"
@@ -11827,6 +11871,7 @@ __metadata:
     "@next/bundle-analyzer": 14.1.4
     "@radix-ui/react-dropdown-menu": ^2.0.6
     "@radix-ui/react-navigation-menu": ^1.1.4
+    "@radix-ui/react-slot": ^1.0.2
     "@studio-freight/lenis": ^1.0.42
     "@svgr/webpack": ^8.0.1
     "@tailwindcss/forms": ^0.5.7
@@ -11841,6 +11886,8 @@ __metadata:
     clsx: ^2.1.0
     contentlayer2: 0.4.4
     cross-env: ^7.0.3
+    embla-carousel-autoplay: ^8.0.2
+    embla-carousel-react: ^8.0.2
     esbuild: 0.20.2
     eslint: ^8.45.0
     eslint-config-next: 14.1.0
@@ -11880,6 +11927,7 @@ __metadata:
     remark: ^15.0.0
     remark-gfm: ^4.0.0
     remark-math: ^6.0.0
+    swiper: ^11.1.1
     tailwind-merge: ^2.2.2
     tailwindcss: ^3.4.3
     tailwindcss-animate: ^1.0.7

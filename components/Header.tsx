@@ -46,7 +46,7 @@ const Header = ({ locale, fluidFont }) => {
 							</Link>
 						))}
 					{/* <SearchButton /> */}
-					<div className="relative z-10 flex flex-row space-x-4">
+					<div className="relative z-10 flex flex-row items-center justify-center space-x-4">
 						<LocaleSwitcher locale={locale} />
 						<ThemeSwitch />
 						<MobileNav />

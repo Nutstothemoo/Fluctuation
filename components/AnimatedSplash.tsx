@@ -17,7 +17,7 @@ const AnimatedSplash = ({ subTitle }) => {
         </motion.div>
         <motion.p
           style={{ color: '#11458D' }}
-          className="absolute bottom-10 right-40 mb-4 mr-4 text-2xl md:text-3xl"
+          className="absolute bottom-0 md:bottom-10 right-20 md:right-40 mb-4 mr-4 text-2xl md:text-3xl"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.4, type: 'spring', stiffness: 100 }}
