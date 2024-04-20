@@ -9,9 +9,10 @@ import FourthPage from '@/components/FourPage'
 import FivePage from '@/components/FivePage'
 import SixPage from '@/components/SixPage'
 import localFont from 'next/font/local'
+import { getDictionary } from 'get-dictionary'
 import Background from '@/components/Background'
 import SectionContainer from '@/components/SectionContainer'
-
+import AnimatedBackgroundHome from '@/components/AnimatedBackgroundHome'
 // Font files can be colocated inside of `app`
 const fluidFont = localFont({
   src: '../liquido-fluid.otf',
@@ -19,22 +20,19 @@ const fluidFont = localFont({
 })
 
 export default async function Page({ params: { locale } }) {
-  // const sortedPosts = sortPosts(allBlogs)
-  // const posts = allCoreContent(sortedPosts)
+  const dictionary = await getDictionary(locale);
   return (
     <>
       <Background />
       <SectionContainer>
         <SplashScreen fluidFont={fluidFont} />
-        <FirstPage params={{ locale }} />
+        <FirstPage dictionary={dictionary} />
         <SecondPage params={{ locale }} />
         <ThirdPage params={{ locale }} />
         <FourthPage params={{ locale }} />
         <FivePage params={{ locale }} />
         <SixPage params={{ locale }} />
       </SectionContainer>
-
-      {/* <Main posts={posts} /> */}
     </>
   )
 }
