@@ -7,6 +7,7 @@ import casquettebalcon from '../public/assets/casquetteBalcon.png'
 import bateau from '../public/assets/bateau.png'
 import { useTransform } from "framer-motion";
 import { useScroll } from "framer-motion";
+// import Lenis from '@studio-freight/lenis'
 
 const images = [
     natureGauche,
@@ -22,8 +23,23 @@ const AnimatedBackgroundHome = ({ containerRef }) => {
     });	
     const y = useTransform(scrollYProgress, [0, 1], [0, 60]);
     const x = useTransform(scrollYProgress, [0, 1], [0, -60])
-    const y2 =useTransform(scrollYProgress, [0,1], [0, 40]); // Adjust these values to create the desired parallax effect
+    const y2 =useTransform(scrollYProgress, [0,1], [0, 40]); 
     const y3 = useTransform(scrollYProgress, [0, 1], [50, 5]);
+    // const lenis = new Lenis({
+    //         smoothWheel:true,
+    //         lerp:1
+    //     },
+    // )
+    // lenis.on('scroll', (e) => {
+    // })
+    
+    // function raf(time) {
+    //     lenis.raf(time)
+    //     requestAnimationFrame(raf)
+    // }    
+    // requestAnimationFrame(raf)
+
+
         return (
         <div className="absolute inset-0">
             <motion.div 
