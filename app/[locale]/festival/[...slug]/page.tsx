@@ -2,12 +2,12 @@ import AnimatedBackground from "@/components/AnimatedBackground";
 import BoatResidency from "@/components/BoatResidency";
 import SectionContainer from "@/components/SectionContainer";
 import festivalsData from "@/data/festivalData";
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "../../../../@/components/ui/badge";
 import Image from "next/image";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaCalendar } from "react-icons/fa";
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Avatar, AvatarFallback, AvatarImage } from "../../../../@/components/ui/avatar"
 export default function Page({
   params,
 }: {
