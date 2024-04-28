@@ -29,13 +29,37 @@ const festivalsData: Festival[] = [
     artists: [
       {
         name: 'Artist 1',
-        imgSrc: 'https://example.com/artist1.jpg',
+        imgSrc: 'https://github.com/shadcn.png',
         tag: 'electronic',
         soundcloudLink: 'https://soundcloud.com/artist1'
       },
       {
         name: 'Artist 1',
-        imgSrc: 'https://example.com/artist1.jpg',
+        imgSrc: "https://github.com/shadcn.png",
+        tag: 'electronic',
+        soundcloudLink: 'https://soundcloud.com/artist1'
+      },
+      {
+        name: 'Artist 1',
+        imgSrc: "https://github.com/shadcn.png",
+        tag: 'electronic',
+        soundcloudLink: 'https://soundcloud.com/artist1'
+      },
+      {
+        name: 'Artist 1',
+        imgSrc: "https://github.com/shadcn.png",
+        tag: 'electronic',
+        soundcloudLink: 'https://soundcloud.com/artist1'
+      },
+      {
+        name: 'Artist 1',
+        imgSrc: "https://github.com/shadcn.png",
+        tag: 'electronic',
+        soundcloudLink: 'https://soundcloud.com/artist1'
+      },
+      {
+        name: 'Artist 1',
+        imgSrc: "https://github.com/shadcn.png",
         tag: 'electronic',
         soundcloudLink: 'https://soundcloud.com/artist1'
       },

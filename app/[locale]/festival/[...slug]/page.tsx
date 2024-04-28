@@ -70,7 +70,7 @@ return (
               className="shadow-lg h-20 w-20 md:h-40 md:w-40 transform transition duration-200 hover:scale-110 ease-in-out"
               key={index}
             >
-              <AvatarImage src={artist.imgSrc}  />
+              <AvatarImage  src={artist.imgSrc} alt={artist.name} />
               <AvatarFallback className="border-1 shadow-lg first:transform transition duration-200 hover:scale-110 ease-in-out bg-gradient-to-br from-purple-500 to-indigo-500">{artist.name}</AvatarFallback>
             </Avatar>
             <p className="text-center font-semibold">{artist.name}</p>
