@@ -90,13 +90,13 @@ return (
           <h2 className="text-xl md:text-2xl font-bold mb-5">Line-up</h2>
             <div className="flex flex-wrap items-center justify-center gap-4">
             {festival.artists.map((artist, index) => (
-              <div className="flex flex-col items-center gap-2 p-2">
+              <div key={index}  className="flex flex-col items-center gap-2 p-2">
                 <Avatar
                   className="shadow-lg h-20 w-20 md:h-40 md:w-40 transform transition duration-200 hover:scale-110 ease-in-out"
                   key={index}
                 >
-                  <AvatarImage  src={artist.imgSrc} alt={artist.name} />
-                  <AvatarFallback className="border-1 shadow-lg first:transform transition duration-200 hover:scale-110 ease-in-out bg-gradient-to-br from-purple-500 to-indigo-500">{artist.name}</AvatarFallback>
+                  <AvatarImage  key={index}  src={artist.imgSrc} alt={artist.name} />
+                  <AvatarFallback key={index} className="border-1 shadow-lg first:transform transition duration-200 hover:scale-110 ease-in-out bg-gradient-to-br from-purple-500 to-indigo-500">{artist.name}</AvatarFallback>
                 </Avatar>
                 <p className="text-center font-semibold">{artist.name}</p>
                 <a href={artist.soundcloudLink} className="transform transition duration-200 hover:scale-110 ease-in-out bg-gradient-to-br from-purple-500 to-orange-500 inline-block text-white px-4 py-2 rounded-full shadow-lg">
