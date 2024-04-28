@@ -15,14 +15,14 @@ const SecondPage = async ({ params }) => {
 		<div className="relative top-0 flex h-screen w-full items-center justify-center">
 			<div className="flex flex-col items-center gap-10 ">
 				<div className="flex flex-col items-center gap-5">
-					<h2 className="text-center text-xl lg:text-4xltext-center  font-bold md:text-4xl">
+					<h2 className="text-center text-xl md:text-2xl lg:text-4xl  font-bold ">
 						{dictionary.line5}
 					</h2>
-					<h2 className="text-center text-xl lg:text-4xltext-center  font-bold md:text-4xl">
+					<h2 className="text-center ttext-xl md:text-2xl lg:text-4xl  font-bold ">
 						{dictionary.line6}
 					</h2>
 				</div>
-				<div className="md:text-md text-center sm:text-sm lg:text-xl">
+				<div className="text-center text-md lg:text-xl">
 					<Paragraph text={`${dictionary.line7} ${dictionary.line8}`} />
 				</div>
 			</div>

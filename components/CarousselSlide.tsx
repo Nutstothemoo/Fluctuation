@@ -11,7 +11,7 @@ import 'swiper/css/bundle'
 
 export default function CarousselSlide() {
   return (
-<section className='z-0 py-8 px-4 sm:px-6 lg:px-8 w-full lg:w-2/3 max-w-4xl mx-auto overflow-hidden'>
+<section className='z-0 py-8 px-4 sm:px-6 lg:px-8 w-full max-w-4xl mx-auto overflow-hidden'>
   <div className='mx-auto w-full'>
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
