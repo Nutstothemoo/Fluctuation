@@ -33,6 +33,18 @@ const festivalsData: Festival[] = [
         tag: 'electronic',
         soundcloudLink: 'https://soundcloud.com/artist1'
       },
+      {
+        name: 'Artist 1',
+        imgSrc: 'https://example.com/artist1.jpg',
+        tag: 'electronic',
+        soundcloudLink: 'https://soundcloud.com/artist1'
+      },
+      {
+        name: 'Artist 1',
+        imgSrc: 'https://example.com/artist1.jpg',
+        tag: 'electronic',
+        soundcloudLink: 'https://soundcloud.com/artist1'
+      },
     ],
     date: '2022-12-31'
   },

@@ -3,7 +3,7 @@ import BoatResidency from "@/components/BoatResidency";
 import SectionContainer from "@/components/SectionContainer";
 import festivalsData from "@/data/festivalData";
 import { Badge } from "@/components/ui/badge"
-import { Avatar } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 export default function Page({
   params,
 }: {
@@ -61,19 +61,26 @@ return (
             ))}
           </div>
       </div>
-      <div className="container py-12">
-      <h2 className="text-xl font-bold">Line-up</h2>
-        <div className="-m-4 flex flex-wrap items-center justify-center gap-4">
-          {festival.artists.map((artist, index) => (
-            <Avatar 
-              key={index} 
-              name={artist.name} 
-              src={artist.imgSrc} 
-              alt={artist.name}
-            />
-          ))}
+      <div className="container gap-2 py-12">
+      <h2 className="text-xl md:text-2xl font-bold mb-5">Line-up</h2>
+        <div className="flex flex-wrap items-center justify-center gap-4">
+        {festival.artists.map((artist, index) => (
+          <div className="flex flex-col items-center gap-2 p-2">
+            <Avatar
+              className="h-20 w-20 md:h-40 md:w-40"
+              key={index}
+            >
+              <AvatarImage src={artist.imgSrc}  />
+              <AvatarFallback className="bg-gradient-to-br from-purple-500 to-indigo-500">{artist.name}</AvatarFallback>
+            </Avatar>
+            <p className="text-center font-semibold">{artist.name}</p>
+            <a href={artist.soundcloudLink} className="transform transition duration-200 hover:scale-110 ease-in-out bg-gradient-to-br from-purple-500 to-orange-500 inline-block text-white px-4 py-2 rounded-full shadow-lg">
+              >
+            </a>
+          </div>
+        ))}
   </div>
-</div>
+      </div>
         </div>
       </SectionContainer>
     </div>
