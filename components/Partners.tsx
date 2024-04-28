@@ -23,16 +23,23 @@ const Partners = () => {
 						<div className="flex items-center justify-center rounded-xl bg-white">
 							<Image src={media} width={500} alt="media partners" className="rounded-xl" />
 						</div>
+						</div>
+						<div className="space-y-2 pb-8 pt-6 md:space-y-5">
 						<h2 className="text-center text-xl lg:text-4xltext-center  font-bold md:text-4xl">Financial</h2>
 						<div className="flex items-center justify-center rounded-xl bg-white">
 							<Image src={partner1} width={500} alt="financial partners" className="rounded-xl" />
 						</div>
+					</div>
+					<div className="space-y-2 pb-8 pt-6 md:space-y-5">
 						<h2 className="text-center text-xl lg:text-4xltext-center  font-bold md:text-4xl">
 							Cultural & Impact
 						</h2>
 						<div className="flex items-center justify-center rounded-xl bg-white">
 							<Image src={culture} width={900} alt="impact partners" className="rounded-xl" />
 						</div>
+					</div>
+					<div className="space-y-2 pb-8 pt-6 md:space-y-5">
+
 						<div className="text-center text-xl lg:text-4xltext-center  font-bold md:text-4xl">
 							Technical
 						</div>
@@ -40,7 +47,7 @@ const Partners = () => {
 							<Image src={technical} width={700} alt="technical partner" className="rounded-xl" />
 						</div>
 					</div>
-				</div>
+					</div>
 			</div>
 		</div>
 	);

@@ -100,7 +100,7 @@ return (
                 </Avatar>
                 <p className="text-center font-semibold">{artist.name}</p>
                 <a href={artist.soundcloudLink} className="transform transition duration-200 hover:scale-110 ease-in-out bg-gradient-to-br from-purple-500 to-orange-500 inline-block text-white px-4 py-2 rounded-full shadow-lg">
-                  >
+                &gt;
                 </a>
               </div>
             ))}
