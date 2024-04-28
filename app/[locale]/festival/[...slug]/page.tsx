@@ -78,7 +78,7 @@ return (
               <Badge 
                 key={index} 
                 variant="default" 
-                className={`shadow-lg border-2 transform transition duration-200 hover:scale-110 ease-in-out bg-gradient-to-br from-purple-500 to-indigo-500 font-semibold p-2`}
+                className={`shadow-lg border-2 transform transition duration-200 hover:scale-110 ease-in-out bg-gradient-to-br from-purple-500 to-indigo-500 font-semibold p-2 text-white`}
               >
                 {tag.tag}
               </Badge>
