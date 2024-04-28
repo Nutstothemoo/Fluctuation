@@ -100,7 +100,7 @@ export default function RootLayout({ children, params: { locale } }) {
         content="#000"
       />
       <body className="pl-[calc(100vw-100%)] text-black antialiased dark:text-white 
-    bg-gradient-to-r from-orange-50 to-white dark:from-blue-950 dark:to-indigo-950">
+    bg-gradient-to-r from-orange-50 to-white dark:from-blue-950 dark:to-indigo-950 scroll-smooth">
         <ThemeProviders>
           <Analytics
             analyticsConfig={siteMetadata.analytics as AnalyticsConfig}
