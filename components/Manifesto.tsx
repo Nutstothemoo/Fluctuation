@@ -38,15 +38,32 @@ const Manifesto = async ({ params }) => {
           </div>
           <div className="m-6 flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
             <div className="m-2 flex items-center justify-center p-2 md:w-1/2">
-              <Image src={manifesto1} alt="EU" width={250} height={250} className="rounded-xl" />
+              <Image src={manifesto1} alt="EU" width={400} height={400} className="rounded-xl" />
             </div>
             <div className="flex flex-col items-center justify-center text-center md:w-1/2 md:text-start">
+            <h2 className="text-center md:text-end text-lg md:text-xl font-extrabold ">FLUTOPIA</h2>
               <div className="p-4">
                 <Paragraph text={`${dictionary.manifesto1}`} />
               </div>
               <div className="p-4">
                 <Paragraph text={`${dictionary.manifesto2}`} />
               </div>
+            </div>
+          </div>
+          <div className="flex flex-col-reverse space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+            <div className="flex items-center justify-center p-2 text-center md:w-1/2 md:text-end">
+              <Paragraph text={`${dictionary.manifesto4}`} />
+            </div>
+            <div className="m-2 flex items-center justify-center p-4 md:w-1/2">
+              <Image src={manifesto2} alt="m2" width={250} height={250} className="rounded-xl" />
+            </div>
+          </div>
+          <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+            <div className="m-2 flex items-center justify-center p-4 md:w-1/2">
+              <Image src={manifesto3} alt="EU" width={250} height={250} className="rounded-xl" />
+            </div>
+            <div className="flex items-center justify-center p-2 text-center md:w-1/2 md:text-start ">
+              <Paragraph text={`${dictionary.manifesto5}`} />
             </div>
           </div>
           <div className="flex flex-col-reverse space-y-4 md:flex-row md:space-x-4 md:space-y-0">

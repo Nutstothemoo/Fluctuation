@@ -13,7 +13,7 @@ const space_grotesk = Space_Grotesk({
 const SplashScreen = ({ fluidFont }) => {
   return (
     <div
-      className={`relative top-0 flex h-screen w-full items-center justify-center ${fluidFont.className}`}
+      className={`relative top-0 flex w-screen h-screen items-center justify-center ${fluidFont.className}`}
     >
       <div className="flex flex-col items-end">
         <AnimatedSplash subTitle="Follow the river of change" />

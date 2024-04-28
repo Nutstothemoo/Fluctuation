@@ -12,7 +12,6 @@ import localFont from 'next/font/local'
 import { getDictionary } from 'get-dictionary'
 import Background from '@/components/Background'
 import SectionContainer from '@/components/SectionContainer'
-import AnimatedBackgroundHome from '@/components/AnimatedBackgroundHome'
 // Font files can be colocated inside of `app`
 const fluidFont = localFont({
   src: '../liquido-fluid.otf',
@@ -24,8 +23,8 @@ export default async function Page({ params: { locale } }) {
   return (
     <>
       <Background />
+      <SplashScreen fluidFont={fluidFont} />
       <SectionContainer>
-        <SplashScreen fluidFont={fluidFont} />
         <FirstPage dictionary={dictionary} />
         <SecondPage params={{ locale }} />
         <ThirdPage params={{ locale }} />
