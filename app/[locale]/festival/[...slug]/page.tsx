@@ -49,12 +49,12 @@ return (
           </div>
           {/* nouvelle section */}
           <div className="container py-12">
-          <div className="-m-4 flex flex-wrap items-center justify-center gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-4">
             {festival.tags.map((tag, index) => (
               <Badge 
                 key={index} 
                 variant="default" 
-                className={`bg-gradient-to-br from-purple-500 to-indigo-500 font-semibold p-2`}
+                className={`shadow-lg border-2 transform transition duration-200 hover:scale-110 ease-in-out bg-gradient-to-br from-purple-500 to-indigo-500 font-semibold p-2`}
               >
                 {tag.tag}
               </Badge>
@@ -67,11 +67,11 @@ return (
         {festival.artists.map((artist, index) => (
           <div className="flex flex-col items-center gap-2 p-2">
             <Avatar
-              className="h-20 w-20 md:h-40 md:w-40"
+              className="shadow-lg h-20 w-20 md:h-40 md:w-40 transform transition duration-200 hover:scale-110 ease-in-out"
               key={index}
             >
               <AvatarImage src={artist.imgSrc}  />
-              <AvatarFallback className="bg-gradient-to-br from-purple-500 to-indigo-500">{artist.name}</AvatarFallback>
+              <AvatarFallback className="border-1 shadow-lg first:transform transition duration-200 hover:scale-110 ease-in-out bg-gradient-to-br from-purple-500 to-indigo-500">{artist.name}</AvatarFallback>
             </Avatar>
             <p className="text-center font-semibold">{artist.name}</p>
             <a href={artist.soundcloudLink} className="transform transition duration-200 hover:scale-110 ease-in-out bg-gradient-to-br from-purple-500 to-orange-500 inline-block text-white px-4 py-2 rounded-full shadow-lg">
