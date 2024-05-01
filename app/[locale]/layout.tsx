@@ -99,7 +99,7 @@ export default function RootLayout({ children, params: { locale } }) {
         media="(prefers-color-scheme: dark)"
         content="#000"
       />
-      <body className="pl-[calc(100vw-100%)] text-black antialiased dark:text-white 
+      <body className="text-black antialiased dark:text-white 
       dark:bg-gradient-to-r dark:from-blue-950 dark:to-indigo-950 scroll-smooth">
         <ThemeProviders>
           <Analytics
@@ -110,7 +110,7 @@ export default function RootLayout({ children, params: { locale } }) {
               <div className="fixed left-0 right-0 top-0 z-50 mx-auto px-4 md:px-8 lg:px-16">
                 <Header locale={locale} fluidFont={fluidFont} />
               </div>
-              <main className="mb-auto">{children}</main>
+              <main className="mb-auto scroll-smooth">{children}</main>
             </SearchProvider>
             <Footer />
           </div>

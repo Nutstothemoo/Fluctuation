@@ -24,14 +24,36 @@ export default async function Page({ params: { locale } }) {
     <>
       <Background />
       <SplashScreen fluidFont={fluidFont} />
-      <SectionContainer>
-        <FirstPage dictionary={dictionary} />
-        <SecondPage params={{ locale }} />
-        <ThirdPage params={{ locale }} />
-        <FourthPage params={{ locale }} />
-        <FivePage params={{ locale }} />
-        <SixPage params={{ locale }} />
-      </SectionContainer>
+      <div className="bg-gradient-to-br  dark:from-sky-950 dark:to-indigo-950">
+        <SectionContainer>
+          <FirstPage dictionary={dictionary} />        
+        </SectionContainer>
+      </div>
+      <div className="bg-gradient-to-br dark:from-blue-950 dark:to-indigo-950">
+        <SectionContainer>
+          <SecondPage params={{ locale }} />
+        </SectionContainer>
+      </div>
+      <div className="bg-gradient-to-br  dark:from-sky-950 dark:to-indigo-950">
+        <SectionContainer>
+          <ThirdPage params={{ locale }} />
+        </SectionContainer>
+      </div>
+      <div className="bg-gradient-to-br  dark:from-blue-950 dark:to-indigo-950">
+        <SectionContainer>
+          <FourthPage params={{ locale }} />
+        </SectionContainer>
+      </div>
+      <div className="bg-gradient-to-br dark:from-indigo-950 dark:to-indigo-950">
+        <SectionContainer>
+          <FivePage params={{ locale }} />
+        </SectionContainer>
+      </div>
+      <div >
+        <SectionContainer>
+          <SixPage params={{ locale }} />
+        </SectionContainer>
+      </div>
     </>
   )
 }
