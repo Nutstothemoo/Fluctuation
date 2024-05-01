@@ -12,8 +12,8 @@ const FourPage = async ({ params }) => {
   const dictionary = await getDictionary(params.locale)
 
   return (
-    <div className="relative top-0 flex h-screen w-full items-center justify-center flex-col">
-      <div>
+    <div className="relative top-0 flex h-[75vh] w-full items-center justify-center flex-col">
+      <div className='flex flex-col gap-5'>
           <CarousselSlide />
           <div className="md:text-md text-center sm:text-sm lg:text-xl font-semibold italic">
             <Paragraph text={`${dictionary.line7} ${dictionary.line10}`} />

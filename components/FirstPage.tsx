@@ -16,7 +16,7 @@
     const containerRef = useRef(null);
 
     return (
-      <div ref={containerRef} className="relative top-0 flex h-screen w-full items-center justify-center">
+      <div ref={containerRef} className="relative top-0 flex h-[60vh] w-full items-center justify-center">
         <div className="md:text-lg text-justify sm:text-sm lg:text-2xl font-semibold italic">
           <Paragraph
             text={`"${dictionary.line1} ${dictionary.line2} ${dictionary.line3} ${dictionary.line4}"`}

@@ -12,9 +12,8 @@ const ThirdPage = async ({ params }) => {
   const dictionary = await getDictionary(params.locale)
 
   return (
-    <div className="relative top-0 flex min-h-screen w-full items-center justify-center">
+    <div className="relative top-0 flex h-[150vh] md:h-[80vh] w-full items-center justify-center">
       <div className="flex flex-col items-center justify-center md:gap-6 lg:gap-24 sm:flex-row">
-     
         <div className="w-[300px] rounded-lg p-2 md:w-1/2">
           <div
             className={'h-full overflow-hidden rounded-md border-2 border-gray-200 border-opacity-60 dark:border-gray-700'}

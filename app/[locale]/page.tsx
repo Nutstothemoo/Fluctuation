@@ -24,27 +24,28 @@ export default async function Page({ params: { locale } }) {
     <>
       <Background />
       <SplashScreen fluidFont={fluidFont} />
-      <div className="bg-gradient-to-br  dark:from-sky-950 dark:to-indigo-950">
+      <div className="bg-gradient-to-br from-red-100 to-amber-50 dark:from-sky-950 dark:to-indigo-950">
         <SectionContainer>
           <FirstPage dictionary={dictionary} />        
         </SectionContainer>
       </div>
-      <div className="bg-gradient-to-br dark:from-blue-950 dark:to-indigo-950">
+      <div className="bg-gradient-to-br from-rose-100 to-amber-50 dark:from-blue-950 dark:to-indigo-950">
         <SectionContainer>
           <SecondPage params={{ locale }} />
         </SectionContainer>
       </div>
-      <div className="bg-gradient-to-br  dark:from-sky-950 dark:to-indigo-950">
+      <div className="bg-gradient-to-br from-pink-100 to-amber-50 dark:from-sky-950 dark:to-indigo-950">
         <SectionContainer>
           <ThirdPage params={{ locale }} />
         </SectionContainer>
       </div>
-      <div className="bg-gradient-to-br  dark:from-blue-950 dark:to-indigo-950">
+      <div className="bg-gradient-to-br from-fuchsia-100 to-amber-50 dark:from-blue-950 dark:to-indigo-950">
+        {/* <div className="block dark:hidden absolute top-96 left-12 right-12 -bottom-24 blur-3xl" style="background:conic-gradient(from 41deg at 50% 50%, rgba(248, 249, 251, 0.00) 0deg, #F7F7F9 35.62500089406967deg, #F7F7F9 238.12499284744263deg, rgba(248, 249, 251, 0.00) 283.0139493942261deg)"></div> */}
         <SectionContainer>
           <FourthPage params={{ locale }} />
         </SectionContainer>
       </div>
-      <div className="bg-gradient-to-br dark:from-indigo-950 dark:to-indigo-950">
+      <div className="bg-gradient-to-br from-red-100 to-amber-50 dark:from-indigo-900 dark:to-sky-900">
         <SectionContainer>
           <FivePage params={{ locale }} />
         </SectionContainer>

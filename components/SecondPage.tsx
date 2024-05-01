@@ -12,7 +12,7 @@ const SecondPage = async ({ params }) => {
 	const dictionary = await getDictionary(params.locale);
 
 	return (
-		<div className="relative top-0 flex h-screen w-full items-center justify-center">
+		<div className="relative top-0 flex h-[60vh] w-full items-center justify-center">
 			<div className="flex flex-col items-center gap-10 ">
 				<div className="flex flex-col items-center gap-5">
 					<h2 className="text-center text-xl md:text-2xl lg:text-4xl  font-bold ">
