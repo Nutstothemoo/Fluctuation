@@ -13,9 +13,8 @@ const LogoFueg = () => {
 		<Image
 			src={theme === "dark" ? logofluctuationDark : logofluctuationLight}
 			alt="Logo Fluctuation"
-			// objectFit="contain"
-			width={70}
-			height={70}
+			width={80}
+			height={80}
 		/>
 	);
 };
