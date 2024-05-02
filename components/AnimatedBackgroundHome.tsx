@@ -24,8 +24,8 @@ const AnimatedBackgroundHome = ({ containerRef }) => {
         <div className="absolute inset-0">
             <motion.div 
                 className="fixed bottom-0 left-0 w-32 md:w-64 xl:90 z-50" 
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                initial={{ y: 100, x: -100 }} 
+                animate={{ y: 0, x: 0 }} 
                 transition={{ duration: 1 }}
                 style={{x , y:y2}}
             >
@@ -33,8 +33,8 @@ const AnimatedBackgroundHome = ({ containerRef }) => {
             </motion.div>
             <motion.div 
                 className="fixed top-10 right-0 w-10 h-10 md:w-16 xl:w-64 z-40" 
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                initial={{ opacity:0, y: -100, x: 100 }}
+                animate={{ opacity:1, y: 0, x: 0 }}
                 transition={{ duration: 1 }}
                 style={{ y }}
             >
@@ -50,8 +50,8 @@ const AnimatedBackgroundHome = ({ containerRef }) => {
             </motion.div> */}
             <motion.div 
                 className="fixed bottom-0 right-0 w-16 md:w-32 xl:w-64 z-50" 
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                initial={{ y: 100, x: 100 }}
+                animate={{ y: 0, x: 0 }}
                 transition={{ duration: 1 }}
                 style={{y:y3}}
             >

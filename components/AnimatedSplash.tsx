@@ -1,30 +1,25 @@
 import React from 'react'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
-import fluctuationGIF from '../public/assets/fluctuationsGIF.gif'
+import { AnimatedText } from './AnimatedText'
 
 const AnimatedSplash = ({ subTitle }) => {
+
   return (
-    <div className="absolute inset-0 flex items-start md:items-center justify-center w-full">
-      <div className="relative mt-64 md:mt-0">
-        <motion.div
-          className="z-10"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-        >
-          <Image src={fluctuationGIF} alt="Centered Gif" layout="responsive" width={300} height={900} />
-        </motion.div>
-        <motion.p
+    <div className="absolute inset-0 flex items-start md:items-center mt-64 md:mt-0 justify-center w-full">
+      <div className="flex flex-col text-6xl md:text-8xl lg:text-9xl gap-6 md:gap-10">
+        <div
+          className="z-10 tracking-widest"
           style={{ color: '#11458D' }}
-          className="absolute left-1/4 right-1/4 bottom-0 md:left-auto md:right-60 text-3xl md:text-4xl text-center md:text-left hidden md:block"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 0.4, type: 'spring', stiffness: 100 }}
         >
-          {subTitle}
-        </motion.p>
+          <AnimatedText once={true} text={"fluctuations"} />
+        </div>
+        <div
+          style={{ color: '#11458D' }}
+          className="text-3xl md:text-4xl text-center md:text-end"
+        >
+          <AnimatedText once={true} text={subTitle} delay={900}  />         
+        </div>
       </div>
+
     </div>
   )
 }
