@@ -4,18 +4,21 @@ import technical from "../public/assets/technical.webp";
 import culture from "../public/assets/culture.webp";
 import Image from "next/image";
 import media from "../public/assets/media.webp";
+import { getDictionary } from "get-dictionary";
 
-const Partners = () => {
+const Partners = async ({ params, font }) => {
+	const dictionary = await getDictionary(params.locale);
+	
 	return (
 		<div className="relative top-0 flex w-full items-center justify-center">
 			<div className="flex flex-col">
 				<div className="divide-y divide-gray-200 dark:divide-gray-700">
 					<div className="space-y-2 pb-8 pt-6 md:space-y-5">
-						<h1 className="md:leading-14 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl">
+						<h1 className={`md:leading-14 text-3xl font-extrabold leading-9 tracking-wider text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl ${font.className}`}>
 							Partners
 						</h1>
 						<p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-							Without them Fluctuations would not be possible
+							{dictionary.titlePartners}
 						</p>
 					</div>
 					<div className="space-y-2 pb-8 pt-6 md:space-y-5">

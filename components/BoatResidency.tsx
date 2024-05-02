@@ -10,13 +10,7 @@ import Br6 from "../public/assets/BR6.webp";
 import Image from "next/image";
 import Paragraph from "./Paragraph";
 
-interface FirstPageProps {
-	params: {
-		locale: string;
-	};
-}
-
-const BoatResidency = async ({ params }) => {
+const BoatResidency = async ({ params, font }) => {
 	const dictionary = await getDictionary(params.locale);
 
 	return (
@@ -24,10 +18,10 @@ const BoatResidency = async ({ params }) => {
 			<div className="flex flex-col">
 				<div className="divide-y divide-gray-200 dark:divide-gray-700">
 					<div className="p-6 md:p-10 space-y-2 pb-8 pt-6 md:space-y-5">
-						<h1 className="md:leading-14 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl">
+						<h1 className={`md:leading-14 text-3xl font-extrabold leading-9 tracking-wider text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl ${font.className}`}>
 							Boat Residency
 						</h1>
-						<p className="text-lg leading-7 text-gray-500 dark:text-gray-400"> Join the Flutopia</p>
+						<p className="text-lg leading-7 text-gray-500 dark:text-gray-400">{dictionary.titleBR}</p>
 					</div>
 					{/* PARITE 1 */}
 					<div className="p-6 md:p-10 space-y-2 pb-8 pt-6 md:space-y-5">

@@ -6,8 +6,17 @@ import { Badge } from "../../../../@/components/ui/badge";
 import Image from "next/image";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaCalendar } from "react-icons/fa";
-
 import { Avatar, AvatarFallback, AvatarImage } from "../../../../@/components/ui/avatar"
+import localFont from 'next/font/local'
+// Font files can be colocated inside of `app`
+
+const fluidFont = localFont({
+  src: '../../../liquido-fluid.otf',
+  display: 'swap',
+})
+
+
+
 export default function Page({
   params,
 }: {
@@ -26,7 +35,7 @@ if (!festival) {
       <SectionContainer>
         <div className="divide-y divide-gray-200 dark:divide-gray-700">
           <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-            <h1 className="md:leading-14 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl">
+            <h1 className={`md:leading-14 text-3xl font-extrabold leading-9 tracking-wider text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl ${fluidFont.className}`}>
               {params.slug}
             </h1>
             <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">Festival Not found</p>
@@ -46,10 +55,10 @@ return (
       <SectionContainer>
         <div className="divide-y divide-gray-200 dark:divide-gray-700">
           <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-            <h1 className="md:leading-14 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl">
+            <h1 className={`md:leading-14 text-3xl font-extrabold leading-9 tracking-wider text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl ${fluidFont.className}`}>
               {festival.title}
             </h1>
-            <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">{festival.description}</p>
+            <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">Some small description</p>
           </div>
           <div className="container py-6">
           <div className="m-6 flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">

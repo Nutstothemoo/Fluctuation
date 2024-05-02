@@ -15,32 +15,20 @@ import manifesto10 from "../public/assets/manifesto10.webp";
 
 import Image from "next/image";
 
-const Manifesto = async ({ params }) => {
+const Manifesto = async ({ params, font }) => {
 	const dictionary = await getDictionary(params.locale);
 
 	return (
 		<div className="relative top-0 flex w-full items-center justify-center">
-			{/* <div
-				className="block dark:hidden absolute top-96 left-12 right-12 -bottom-24 blur-3xl"
-				style={{
-					background:
-						"conic-gradient(from 41deg at 50% 50%, rgba(248, 249, 251, 0.00) 0deg, #F7F7F9 35.62500089406967deg, #F7F7F9 238.12499284744263deg, rgba(248, 249, 251, 0.00) 283.0139493942261deg)",
-				}}
-			></div>
-			<div
-				className="hidden dark:block absolute top-96 left-12 right-12 -bottom-24 blur-3xl"
-				style={{
-					background:
-						"conic-gradient(from 41deg at 50% 50%, rgba(4, 5, 10, 0.00) 0deg, #04050A 35.62500089406967deg, #04050A 238.12499284744263deg, rgba(4, 5, 10, 0.00) 283.0139493942261deg)",
-				}}
-			></div> */}
 			<div className="flex flex-col">
 				<div className="divide-gray-250 divide-y dark:divide-gray-700">
 					<div className="space-y-2 pb-8 pt-6 md:space-y-5">
-						<h1 className="md:leading-14 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl">
+						<h1 className={`md:leading-14 text-3xl font-extrabold leading-9 tracking-wider text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl ${font.className}`}>
 							Manifesto
 						</h1>
-						<p className="text-lg leading-7 text-gray-500 dark:text-gray-400">{dictionary.manifesto3}</p>
+						<p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+							{dictionary.manifesto3}
+							</p>
 					</div>
 					<div className="m-6 flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
 						<div className="m-2 flex items-center justify-center p-2 md:w-1/2">
