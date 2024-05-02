@@ -5,9 +5,8 @@ import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { A11y, Scrollbar, Navigation, Pagination } from 'swiper/modules'
 
-import { images } from '@/images'
+import { images } from '@/components/images'
 import 'swiper/css/bundle'
-
 
 export default function CarousselSlide() {
   return (

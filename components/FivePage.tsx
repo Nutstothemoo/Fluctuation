@@ -13,7 +13,7 @@ const FivePage = async ({ params }) => {
 	const dictionary = await getDictionary(params.locale);
 
 	return (
-		<div className="relative top-0 h-[90vh] w-full items-center justify-center flex flex-col space-y-5">
+		<div className="relative top-0 h-[90vh] min-h-[800px] w-full items-center justify-center flex flex-col space-y-5">
 			<h2 className="text-center text-lg font-bold md:text-4xl mb-10">{dictionary.fivePageTile}</h2>
 			<Image src={festiboat3} alt="festiboat3" width={800} />
 

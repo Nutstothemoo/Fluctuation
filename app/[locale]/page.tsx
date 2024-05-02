@@ -1,6 +1,3 @@
-// import { sortPosts, allCoreContent } from 'pliny/utils/contentlayer'
-// import { allBlogs } from 'contentlayer/generated'
-// import Main from './Main'
 import SplashScreen from '@/components/splashscreen'
 import FirstPage from '@/components/FirstPage'
 import SecondPage from '@/components/SecondPage'
@@ -13,6 +10,7 @@ import { getDictionary } from 'get-dictionary'
 import Background from '@/components/Background'
 import SectionContainer from '@/components/SectionContainer'
 // Font files can be colocated inside of `app`
+
 const fluidFont = localFont({
   src: '../liquido-fluid.otf',
   display: 'swap',
