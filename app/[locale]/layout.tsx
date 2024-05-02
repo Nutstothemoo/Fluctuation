@@ -10,7 +10,13 @@ import siteMetadata from "@/data/siteMetadata";
 import { ThemeProviders } from "../theme-providers";
 import { Metadata } from "next";
 import localFont from "next/font/local";
+import { Poppins } from 'next/font/google'
 
+const inter = Poppins({
+  subsets: ['latin'],
+	weight: '400',
+  display: 'swap',
+})
 // Font files can be colocated inside of `app`
 const fluidFont = localFont({
 	src: "../liquido-fluid.otf",
@@ -59,7 +65,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children, params: { locale } }) {
 	return (
-		<html lang={locale} className={`${fluidFont.className} scroll-smooth`} suppressHydrationWarning>
+		<html lang={locale} className={inter.className} suppressHydrationWarning>
 			<link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/apple-touch-icon.png" />
 			{/* <link rel="icon" type="image/png" sizes="32x32" href="static/favicons/favicon-32x32.png" /> */}
 			{/* <link rel="icon" type="image/png" sizes="16x16" href="static/favicons/favicon-16x16.png" /> */}
@@ -76,7 +82,7 @@ export default function RootLayout({ children, params: { locale } }) {
 							<div className="fixed left-0 right-0 top-0 z-50 mx-auto px-4 md:px-8 lg:px-16">
 								<Header locale={locale} fluidFont={fluidFont} />
 							</div>
-							<main className="mb-auto">{children}</main>
+							<main className="mb-auto scroll-smooth">{children}</main>
 						</SearchProvider>
 						<Footer />
 					</div>
