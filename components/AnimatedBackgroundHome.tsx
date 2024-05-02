@@ -32,7 +32,7 @@ const AnimatedBackgroundHome = ({ containerRef }) => {
                 <Image src={natureGauche} alt="Left Nature" />
             </motion.div>
             <motion.div 
-                className="fixed top-10 right-0 w-10 h-10 md:w-16 xl:w-64 z-50" 
+                className="fixed top-10 right-0 w-10 h-10 md:w-16 xl:w-64 z-40" 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}

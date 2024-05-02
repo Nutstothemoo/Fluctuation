@@ -21,7 +21,7 @@ const Header = ({ locale, fluidFont }) => {
 							<div>
 								<LogoFueg />
 							</div>
-							{typeof siteMetadata.headerTitle === "string" ? (
+							{/* {typeof siteMetadata.headerTitle === "string" ? (
 								<div
 									className={`dark: dark: hidden h-6 text-3xl font-bold tracking-widest text-indigo-900 dark:text-white md:block ${fluidFont.className}`}
 								>
@@ -29,7 +29,7 @@ const Header = ({ locale, fluidFont }) => {
 								</div>
 							) : (
 								siteMetadata.headerTitle
-							)}
+							)} */}
 						</div>
 					</Link>
 				</div>
@@ -46,7 +46,7 @@ const Header = ({ locale, fluidFont }) => {
 							</Link>
 						))}
 					{/* <SearchButton /> */}
-					<div className="relative z-10 flex flex-row items-center justify-center space-x-4">
+					<div className="relative z-50 flex flex-row items-center justify-center space-x-4">
 						<LocaleSwitcher locale={locale} />
 						<ThemeSwitch />
 						<MobileNav />
