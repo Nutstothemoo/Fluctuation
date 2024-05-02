@@ -17,7 +17,7 @@ const ThirdPage = async ({ params }) => {
 						<Image
 							alt={"fesitboat2"}
 							src={L05}
-							className="object-cover object-center sm:h-52 lg:h-64"
+							className="object-cover object-center sm:h-52 lg:h-64 z-30"
 							width={544}
 							height={306}
 						/>
@@ -43,16 +43,16 @@ const ThirdPage = async ({ params }) => {
 					</div>
 				</div>
 
-				<div className="w-[300px] min-h-full rounded-lg p-2 md:w-1/2">
+				<div className="w-[300px] min-h-full rounded-lg p-2 md:w-1/2 z-30">
 					<div
 						className={
-							"h-full overflow-hidden rounded-md border-2 border-gray-200 border-opacity-60 dark:border-gray-700"
+							"z-30 h-full overflow-hidden rounded-md border-2 border-gray-200 border-opacity-60 dark:border-gray-700"
 						}
 					>
 						<Image
 							alt={"fesitboat2"}
 							src={L05}
-							className="object-cover object-center sm:h-52 lg:h-64"
+							className="object-cover object-center sm:h-52 lg:h-64 z-30"
 							width={544}
 							height={306}
 						/>

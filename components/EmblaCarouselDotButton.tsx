@@ -56,7 +56,11 @@ export const DotButton: React.FC<PropType> = (props) => {
 	const { children, ...restProps } = props;
 
 	return (
-		<button type="button" {...restProps}>
+		<button
+			className="transition duration-200 ease-in-out hover:scale-105 flex items-center justify-center w-48 bg-gradient-to-r from-orange-300 to-indigo-500 hover:from-orange-600 hover:to-indigo-600 focus:outline-none text-white text-md font-bold shadow-md "
+			type="button"
+			{...restProps}
+		>
 			{children}
 		</button>
 	);
