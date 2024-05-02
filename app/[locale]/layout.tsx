@@ -68,10 +68,7 @@ export default function RootLayout({ children, params: { locale } }) {
 			<meta name="msapplication-TileColor" content="#11458d" />
 			<meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
 			<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
-			<body
-				className="text-black antialiased dark:text-white 
-      dark:bg-gradient-to-r dark:from-blue-950 dark:to-indigo-950 "
-			>
+			<body className="text-black antialiased dark:text-white dark:bg-gradient-to-r dark:from-blue-950 dark:to-indigo-950 ">
 				<ThemeProviders>
 					<Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
 					<div className="z-5 flex h-screen flex-col justify-between font-sans ">
