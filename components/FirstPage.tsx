@@ -18,7 +18,7 @@ const FirstPage = ({ dictionary }: FirstPageProps) => {
 	return (
 		<div
 			ref={containerRef}
-			className="relative top-0 flex h-[60vh] min-h-[500px] w-full items-center justify-center"
+			className="relative top-0 flex h-[60vh] md:min-h-[500px] w-full items-center justify-center"
 		>
 			<div className="md:text-lg text-justify sm:text-sm lg:text-2xl font-semibold italic">
 				<Paragraph text={`"${dictionary.line1} ${dictionary.line2} ${dictionary.line3} ${dictionary.line4}"`} />

@@ -2,18 +2,13 @@ import { getDictionary } from "get-dictionary";
 import React from "react";
 import Image from "next/image";
 import L05 from "../public/assets/L05.jpg";
-import { motion } from "framer-motion";
-interface FirstPageProps {
-	params: {
-		locale: string;
-	};
-}
+
 const ThirdPage = async ({ params }) => {
 	const dictionary = await getDictionary(params.locale);
 	return (
-		<div className="relative top-0 flex h-[150vh] md:h-[80vh] min-h-[800px] w-full items-center justify-center">
+		<div className="relative top-0 flex h-[1500px] md:h-[800px] w-full items-center justify-center">
 			<div className="flex flex-col items-center justify-center md:gap-6 lg:gap-24 sm:flex-row">
-				<div className="w-[300px] rounded-lg p-2 md:w-1/2">
+				<div className="w-[300px] min-h-full rounded-lg p-2 md:w-1/2">
 					<div
 						className={
 							"h-full overflow-hidden rounded-md border-2 border-gray-200 border-opacity-60 dark:border-gray-700"
