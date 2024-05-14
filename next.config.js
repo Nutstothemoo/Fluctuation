@@ -63,7 +63,7 @@ module.exports = () => {
 		reactStrictMode: true,
 		pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
 		images: {
-			domains: ["i.ibb.co"],
+			domains: ["i.ibb.co", "cdn.sanity.io"],
 			remotePatterns: [
 				{
 					protocol: "https",
