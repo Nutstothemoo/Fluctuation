@@ -5,7 +5,6 @@ import SectionContainer from "@/components/SectionContainer";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import localFont from "next/font/local";
 import { getDictionary } from "get-dictionary";
-import Image from "./../../../components/Image";
 import imageUrlBuilder from "@sanity/image-url";
 
 // Get a pre-configured url-builder from your sanity client
@@ -28,8 +27,6 @@ export const metadata = genPageMetadata({ title: "Projects" });
 
 export default async function Projects({ params: { locale } }) {
 	const festivalsData = await client.fetch(`*[_type == "festival"]`);
-	console.log(festivalsData[0].Image);
-	console.log(urlFor(festivalsData[0].Image).url())
 	const dictionary = await getDictionary(locale);
 	return (
 		<>

@@ -21,20 +21,6 @@ export default async function Page({ params: { locale } }) {
   return (
     <>
       <Background />
-      {/* <div
-				className="z-30 block dark:hidden absolute top-96 left-12 right-12 -bottom-24 blur-3xl"
-				style={{
-					background:
-						"conic-gradient(from 41deg at 50% 50%, rgba(248, 249, 251, 0.00) 0deg, #F7F7F9 35.62500089406967deg, #F7F7F9 238.12499284744263deg, rgba(248, 249, 251, 0.00) 283.0139493942261deg)",
-				}}
-			></div>
-			<div
-				className="z-30 hidden dark:block absolute top-96 left-12 right-12 -bottom-24 blur-3xl"
-				style={{
-					background:
-						"conic-gradient(from 41deg at 50% 50%, rgba(4, 5, 10, 0.00) 0deg, #04050A 35.62500089406967deg, #04050A 238.12499284744263deg, rgba(4, 5, 10, 0.00) 283.0139493942261deg)",
-				}}
-			></div> */}
       <SplashScreen fluidFont={fluidFont} />
       <div className="bg-gradient-to-br from-red-100 to-amber-50 dark:from-sky-950 dark:to-indigo-950">
         <SectionContainer>
