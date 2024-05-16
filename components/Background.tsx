@@ -1,10 +1,11 @@
 import Image from "next/image";
-import afficheBateusanstextwebp from "../public/assets/afficheBateausanstexte.webp";
+import fp from "../public/assets/F-header-fb-page.jpg";
+
 export default function Background() {
 	return (
 		<Image
 			alt="Fluctuation background"
-			src={afficheBateusanstextwebp}
+			src={fp}
 			placeholder="blur"
 			quality={100}
 			fill

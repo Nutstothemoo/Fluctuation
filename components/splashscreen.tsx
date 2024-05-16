@@ -9,7 +9,7 @@ const SplashScreen = ({ fluidFont }) => {
     <div
       className={`mx-auto relative top-0 flex w-full overflow-x-hidden h-screen items-center justify-center ${fluidFont.className}`}
     >
-        <AnimatedSplash subTitle="Follow the river of change" />
+        {/* <AnimatedSplash subTitle="Follow the river of change" /> */}
     </div>
   )
 }
