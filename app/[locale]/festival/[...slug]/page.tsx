@@ -119,7 +119,33 @@ export default async function Page({
 						)}
 						{/* nouvelle section */}
 						<div className="container gap-2 py-12">
-							<h2 className="text-xl md:text-2xl font-bold mb-5">Line-up</h2>
+							<h2 className="text-xl md:text-2xl font-bold mb-5"> Line-up </h2>
+							{festival.artists && festival.artists.length > 0 && (
+								<div className="flex flex-col">
+									{festival.artists
+										.sort(
+											(a, b) =>
+												new Date(a.LineupStartTime).getTime() -
+												new Date(b.LineupEndTime).getTime()
+										)
+										.map((artist, index) => (
+											<div key={index} className="flex flex-col items-center ">
+												<div className= "flex flex-row gap-3">
+													<p className="font-bold">{artist.name}</p>
+													<p>
+														{new Date(artist.startTime).toLocaleTimeString()} -{" "}
+														{new Date(artist.endTime).toLocaleTimeString()}
+													</p>
+												</div>
+
+											</div>
+										))}
+								</div>
+							)}
+						</div>
+						<div className="container gap-2 py-12">
+							{/* nouvelle section */}
+							<h2 className="text-xl md:text-2xl font-bold mb-5">Artists</h2>
 							{festival.artists && festival.artists.length > 0 && (
 								<div className="flex flex-wrap items-center justify-center gap-4">
 									{festival.artists.map((artist, index) => (
@@ -128,7 +154,11 @@ export default async function Page({
 												className="shadow-lg h-20 w-20 md:h-40 md:w-40 transform transition duration-200 hover:scale-110 ease-in-out"
 												key={index}
 											>
-												<AvatarImage key={index} src={urlFor(artist.image).url()} alt={artist.name} />
+												<AvatarImage
+													key={index}
+													src={urlFor(artist.image).url()}
+													alt={artist.name}
+												/>
 												<AvatarFallback
 													key={index}
 													className="border-1 shadow-lg first:transform transition duration-200 hover:scale-110 ease-in-out bg-gradient-to-br from-purple-500 to-indigo-500"

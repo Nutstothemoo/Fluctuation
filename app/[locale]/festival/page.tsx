@@ -49,7 +49,7 @@ export default async function Projects({ params: { locale } }) {
 									<Card
 										key={festival.title}
 										title={festival.title}
-										description={festival.description}
+										description={festival.smalldescription}
 										imgSrc={urlFor(festival.Image).url()}
 										href={festival.href}
 									/>

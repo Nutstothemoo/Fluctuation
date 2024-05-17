@@ -21,10 +21,10 @@ const FirstPage = ({ dictionary }: FirstPageProps) => {
 			className="relative top-0 flex h-[60vh] md:min-h-[500px] w-full items-center justify-center"
 		>
 			<div className="md:text-lg text-center sm:text-sm lg:text-2xl font-semibold italic ">
-				{/* <Paragraph text={`"${dictionary.line1} ${dictionary.line2}`} /> */}
-				{/* <Paragraph text={`${dictionary.line3} ${dictionary.line4}"`} /> */}
+				<Paragraph text={`"${dictionary.line1} ${dictionary.line2}`} />
+				<Paragraph text={`${dictionary.line3} ${dictionary.line4}"`} />
 			</div>
-			<AnimatedBackgroundHome containerRef={containerRef} />
+			{/* <AnimatedBackgroundHome containerRef={containerRef} /> */}
 		</div>
 	);
 };
