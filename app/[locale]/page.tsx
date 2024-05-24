@@ -16,12 +16,17 @@ const fluidFont = localFont({
   display: 'swap',
 })
 
+const regularFont = localFont({
+  src:'../liquidoregular.otf',
+  display:'swap'
+})
+
 export default async function Page({ params: { locale } }) {
   const dictionary = await getDictionary(locale);
   return (
     <>
       <Background />
-      <SplashScreen fluidFont={fluidFont} />
+      <SplashScreen fluidFont={fluidFont} regularFont={regularFont}/>
       <div className="bg-gradient-to-br from-red-100 to-amber-50 dark:from-sky-950 dark:to-indigo-950">
         <SectionContainer>
           <FirstPage dictionary={dictionary} />        

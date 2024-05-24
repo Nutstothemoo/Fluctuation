@@ -24,7 +24,6 @@ const FirstPage = ({ dictionary }: FirstPageProps) => {
 				<Paragraph text={`"${dictionary.line1} ${dictionary.line2}`} />
 				<Paragraph text={`${dictionary.line3} ${dictionary.line4}"`} />
 			</div>
-			{/* <AnimatedBackgroundHome containerRef={containerRef} /> */}
 		</div>
 	);
 };
