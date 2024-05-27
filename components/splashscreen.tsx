@@ -49,7 +49,7 @@ const SplashScreen = ({ fluidFont, regularFont }) => {
 					{" "}
 					Fluctuations
 				</p>
-				<p className="lg:text-6xl font-normal tracking-[.30em]	">Festival 2024 </p>
+				<p className="lg:text-6xl font-normal tracking-[.30em]">Festival 2024 </p>
 			</motion.div>
 		</div>
 	);
